@@ -56,6 +56,15 @@ os.rmdir('foldername')        # xóa folder có tên: foldername
 print(os.listdir())
 ```
 
+Để xóa một thư mục không trống, ta có thể sử dụng phương thức rmtree\(\) thuộc module shutil
+
+```python
+import shutil
+
+shutil.rmtree('fodername')
+print(os.listdir())
+```
+
 
 
 
