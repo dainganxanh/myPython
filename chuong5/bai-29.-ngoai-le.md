@@ -47,7 +47,7 @@ a = 1 / 0
 Chạy chương trình sẽ nhận được thông báo sau:
 ```python
 Traceback (most recent call last):
-  File "C:\Users\daing\OneDrive\Desktop\main.py", line 1, in <module>
+  File "C:\...\main.py", line 1, in <module>
     a = 1 / 0
 ZeroDivisionError: division by zero
 ```
