@@ -1,2 +1,2 @@
-# Chương VII. NGÀY - GIỜ
+# Chương VII. HƯỚNG ĐỐI TƯỢNG
 
