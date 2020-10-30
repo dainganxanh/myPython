@@ -37,5 +37,22 @@ Nghịch đảo của  5 là 0.2`
 
 Ở ví dụ trên, phần tử đầu tiên là 'a' không thể thực hiện phép tính r = 1/'a' nên phát sinh ngoại lệ "`ValueError`" , phần tử thứ 2 là 0 phát sinh ngoại lệ "`ZeroDivisionError`" khi thực hiện phép tính 1/0.
 
+Vì tất cả các ngoại lệ tích hợp sẵn đều kế thừa từ class Exception trong module sys nên ta có thể viết chương trình trên theo cách sau:
+
+```python
+import sys
+
+ma = ['a', 0, 2, 5]
+
+for i in ma:
+    try:
+        print("Giá trị phần tử là", i)
+        r = 1/int(i)
+        print("Nghịch đảo của ", i, "là", r)
+    except Exception as ex:
+        print("Phát sinh ngoại lệ:", ex.__class__ )
+        print("Xét phẩn tử tiếp theo:")
+```
+
 
 
