@@ -11,6 +11,6 @@ while True:
         print(f'Bạn vừa nhập một số hợp lệ: x = {x}')
         break
     except:
-        print('Số bạn vừa nhập nằm ngoài khoảng cho phép. Nhập lại nhé!')
+        print('Số vừa nhập ngoài khoảng cho phép. Nhập lại nhé!')
 ```
 
