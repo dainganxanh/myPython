@@ -38,6 +38,7 @@
 * [Chương VI. LỖI & NGOẠI LỆ](chuong6/README.md)
   * [Bài 29. Ngoại lệ](chuong6/bai-29.-ngoai-le.md)
   * [Bài 30. Xử lý ngoại lệ](chuong6/bai-30.-xu-ly-ngoai-le.md)
+  * [Bài 31. Xây dựng ngoại lệ](chuong6/bai-31.-xay-dung-ngoai-le.md)
 * [Chương VII. HƯỚNG ĐỐI TƯỢNG](chuong7.md)
 * [Chương VIII. NGÀY - GIỜ](chuong8.md)
 * [Chương IX. CHỦ ĐỀ NÂNG CAO](chuong9.md)
