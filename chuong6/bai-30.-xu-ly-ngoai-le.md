@@ -90,5 +90,26 @@ for i in ma:
         print()
 ```
 
+Ta cũng có thể bắt nhiều ngoại lệ trong một lệnh except. Ví dụ:
+
+```python
+ma = ['a', 0, 2, 5]
+
+for i in ma:
+    try:
+        print("Giá trị phần tử là", i)
+        r = 1/int(i)
+        print("Nghịch đảo của ", i, "là", r)
+        print()
+    except (ValueError, ZeroDivisionError):
+        print("Lỗi giá trị phần tử không phù hợp.")
+        print("Xét phẩn tử tiếp theo:")
+        print()
+```
+
+## Câu lệnh try else
+
+Trong một số trường hợp, ta có thể muốn chạy một khối lệnh nhất định nào đó khi khối lệnh trong try không có bất kỳ lỗi nào. Đối với những trường hợp này, ta có thể sử dụng từ khóa else với câu lệnh try.
+
 
 
