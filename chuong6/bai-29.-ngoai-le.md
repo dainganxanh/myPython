@@ -74,38 +74,38 @@ print(dir(locals()['__builtins__']))
 
 Một số ngoại lệ tích hợp sẵn phổ biến trong Python cùng với lỗi gây ra chúng được liệt kê dưới đây:
 
-| Exception | Cause of Error |
+| **Ngoại lệ** | **Lý do gây ra** |
 | :--- | :--- |
-| `AssertionError` | Raised when an `assert` statement fails. |
-| `AttributeError` | Raised when attribute assignment or reference fails. |
-| `EOFError` | Raised when the `input()` function hits end-of-file condition. |
-| `FloatingPointError` | Raised when a floating point operation fails. |
-| `GeneratorExit` | Raise when a generator's `close()` method is called. |
-| `ImportError` | Raised when the imported module is not found. |
-| `IndexError` | Raised when the index of a sequence is out of range. |
-| `KeyError` | Raised when a key is not found in a dictionary. |
-| `KeyboardInterrupt` | Raised when the user hits the interrupt key \(`Ctrl+C` or `Delete`\). |
-| `MemoryError` | Raised when an operation runs out of memory. |
-| `NameError` | Raised when a variable is not found in local or global scope. |
-| `NotImplementedError` | Raised by abstract methods. |
-| `OSError` | Raised when system operation causes system related error. |
-| `OverflowError` | Raised when the result of an arithmetic operation is too large to be represented. |
-| `ReferenceError` | Raised when a weak reference proxy is used to access a garbage collected referent. |
-| `RuntimeError` | Raised when an error does not fall under any other category. |
-| `StopIteration` | Raised by `next()` function to indicate that there is no further item to be returned by iterator. |
-| `SyntaxError` | Raised by parser when syntax error is encountered. |
-| `IndentationError` | Raised when there is incorrect indentation. |
-| `TabError` | Raised when indentation consists of inconsistent tabs and spaces. |
-| `SystemError` | Raised when interpreter detects internal error. |
-| `SystemExit` | Raised by `sys.exit()` function. |
-| `TypeError` | Raised when a function or operation is applied to an object of incorrect type. |
-| `UnboundLocalError` | Raised when a reference is made to a local variable in a function or method, but no value has been bound to that variable. |
-| `UnicodeError` | Raised when a Unicode-related encoding or decoding error occurs. |
-| `UnicodeEncodeError` | Raised when a Unicode-related error occurs during encoding. |
-| `UnicodeDecodeError` | Raised when a Unicode-related error occurs during decoding. |
-| `UnicodeTranslateError` | Raised when a Unicode-related error occurs during translating. |
-| `ValueError` | Raised when a function gets an argument of correct type but improper value. |
-| `ZeroDivisionError` | Raised when the second operand of division or modulo operation is zero. |
+| AssertionError | Xảy ra khi câu lệnh assert thất bại. |
+| AttributeError | Xảy ra khi gán thuộc tính hoặc tham chiếu thất bại. |
+| EOFError | Xảy ra khi hàm input \(\) chạm vào điều kiện end-of-file. |
+| FloatingPointError | Xảy ra khi một số thực dấy phẩy động thực thi không thành công |
+| GeneratorExit | Xảy ra khi phương thức close\(\) của hàm generator được gọi. |
+| ImportError | Xảy ra khi không tìm thấy module được import. |
+| IndexError | Xảy ra khi một chỉ số trong chuỗi \(sequence\) nằm ngoài phạm vi. |
+| KeyError | Xảy ra khi không tìm thấy khóa ánh xạ \(từ điển\) trong tập hợp các khóa hiện có. |
+| KeyboardInterrupt | Xảy ra khi người dùng nhấn phím ngắt \(thông thường là Ctrl-C hoặc Delete\). |
+| MemoryError | Xảy ra khi một operation hết bộ nhớ nhưng tình huống vẫn có thể được sửa chữa \(bằng cách xóa một số đối tượng\). |
+| NameError | Xảy ra khi không tìm thấy tên cục bộ hoặc toàn cầu của biến. |
+| NotImplementedError | Xảy ra bằng các phương thức trừu tượng khi chúng yêu cầu các lớp dẫn xuất ghi đè phương thức. |
+| OSError | Xảy ra khi một hàm trả về lỗi liên quan đến hệ thống |
+| OverflowError | Xảy ra khi kết quả của phép toán số học quá lớn không thể biểu diễn. |
+| ReferenceError | Xảy ra khi một proxy tham chiếu yếu sử dụng để truy cập một thuộc tính của tham chiếu sau khi thu thập rác. |
+| RuntimeError | Xảy ra khi phát hiện thấy lỗi không thuộc bất kỳ danh mục nào khác. |
+| StopIteration | Xảy ra bằng phương thức next\(\) của một vòng lặp để báo hiệu rằng không có giá trị nào được trả về bởi iterator. |
+| SyntaxError | Xảy ra khi gặp lỗi cú pháp. |
+| IndentationError | Xảy ra khi có lỗi thụt lề không chính xác. |
+| TabError | Xảy ra khi thụt lề sử dụng các tab và dấu cách không nhất quán. |
+| SystemError | Xảy ra khi trình thông dịch tìm thấy các lỗi nội bộ nhưng tình hình không quá nghiêm trọng. |
+| SystemExit | Xảy ra bởi hàm sys.exit\(\). |
+| TypeError | Xảy ra khi một hàm hoặc phép thực thi \(operation\) áp dụng kiểu không chính xác cho một đối tượng. |
+| UnboundLocalError | Xảy ra khi tham chiếu tạo thành một biến cục bộ trong một hàm hoặc phương thức, nhưng không có giá trị nào bị ràng buộc với biến đó. |
+| UnicodeError | Xảy ra khi có lỗi liên quan đến Unicode |
+| UnicodeEncodeError | Xảy ra khi lỗi liên quan đến Unicode diễn ra trong quá trình mã hóa. |
+| UnicodeDecodeError | Xảy ra khi lỗi liên quan đến Unicode diễn ra trong quá trình giải mã. |
+| UnicodeTranslateError | Xảy ra khi lỗi liên quan đến Unicode trong quá trình dịch. |
+| ValueError | Xảy ra khi một phép toán hoặc hàm nhận được một đối số có kiểu đúng nhưng giá trị không phù hợp |
+| ZeroDivisionError | Xảy ra khi đối số thứ hai của phép chia hoặc phép toán modulo bằng 0. |
 
 Chúng ta có thể xử lý các ngoại lệ bằng cách sử dụng câu lệnh try, except và finally \(sẽ tìm hiểu trong bài học tiếp theo\).
 
