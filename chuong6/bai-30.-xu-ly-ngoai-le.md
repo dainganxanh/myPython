@@ -54,5 +54,41 @@ for i in ma:
         print("Xét phẩn tử tiếp theo:")
 ```
 
+## Bắt ngoại lệ cụ thể
+
+Ta có thể dự đoán ngoại lệ phát sinh để bắt và xử lý theo từng trường hợp. 
+
+Chỉ định ngoại lệ cụ thể cho khối lệnh except với cú pháp như sau:
+
+```python
+try:
+ # khối lệnh try
+except exceptionName:
+ # khối lệnh except
+except exceptionName2:
+ # khối lệnh except 2
+```
+
+Ví dụ 
+
+```python
+ma = ['a', 0, 2, 5]
+
+for i in ma:
+    try:
+        print("Giá trị phần tử là", i)
+        r = 1/int(i)
+        print("Nghịch đảo của ", i, "là", r)
+        print()
+    except ValueError:
+        print("Lỗi giá trị phần tử không phù hợp.")
+        print("Xét phẩn tử tiếp theo:")
+        print()
+    except ZeroDivisionError:
+        print("Lỗi mẫu số bằng 0.")
+        print("Xét phẩn tử tiếp theo:")
+        print()
+```
+
 
 
