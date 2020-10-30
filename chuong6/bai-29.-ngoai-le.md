@@ -4,8 +4,6 @@ description: Lỗi và ngoại lệ trong Python
 
 # Bài 29. Ngoại lệ
 
-## Bài 29. Ngoại lệ
-
 Một chương trình python sẽ dừng lại ngay khi nó gặp lỗi nếu chưa được khắc phục. Những lỗi này có thể được phân thành 2 loại:
 
 * Lỗi cú pháp 
