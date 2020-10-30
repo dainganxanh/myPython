@@ -23,17 +23,20 @@ for i in ma:
         print("Xét phẩn tử tiếp theo:")
 ```
 
-Output:  
-`Giá trị phần tử là a  
-Phát sinh ngoại lệ: <class 'ValueError'>  
-Xét phẩn tử tiếp theo:  
-Giá trị phần tử là 0  
-Phát sinh ngoại lệ: <class 'ZeroDivisionError'>  
-Xét phẩn tử tiếp theo:  
-Giá trị phần tử là 2  
-Nghịch đảo của  2 là 0.5  
-Giá trị phần tử là 5  
-Nghịch đảo của  5 là 0.2`
+Output:
+
+```python
+Giá trị phần tử là a
+Phát sinh ngoại lệ: <class 'ValueError'>
+Xét phẩn tử tiếp theo:
+Giá trị phần tử là 0
+Phát sinh ngoại lệ: <class 'ZeroDivisionError'>
+Xét phẩn tử tiếp theo:
+Giá trị phần tử là 2
+Nghịch đảo của  2 là 0.5
+Giá trị phần tử là 5
+Nghịch đảo của  5 là 0.2
+```
 
 Ở ví dụ trên, phần tử đầu tiên là 'a' không thể thực hiện phép tính r = 1/'a' nên phát sinh ngoại lệ "`ValueError`" , phần tử thứ 2 là 0 phát sinh ngoại lệ "`ZeroDivisionError`" khi thực hiện phép tính 1/0.
 
