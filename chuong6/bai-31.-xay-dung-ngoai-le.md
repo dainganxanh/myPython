@@ -1,3 +1,7 @@
+---
+description: Ngoại lệ do người dùng tự định nghĩa
+---
+
 # Bài 31. Xây dựng ngoại lệ
 
 Ví dụ, chương trình sau yêu cầu nhập một số thỏa điều kiện, lặp đến khi nào người dùng nhập đúng mới thôi.
