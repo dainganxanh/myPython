@@ -37,7 +37,7 @@ Các lỗi xảy ra khi chạy chương trình \(sau khi vượt qua kiểm tra 
 
 Ví dụ, lỗi sẽ phát sinh khi ta mở một file không tồn tại \(FileNotFoundError\),khi ta thực hiện phép chia cho 0 \(ZeroDivisionError\), khi ta import một module không tồn tại \(ImportError\),...
 
-Bất cứ khi nào các loại lỗi logic xảy ra, Python sẽ tạo một đối tượng ngoại lệ. Nếu không được xử lý đúng cách, nó sẽ in thông báo lỗi cùng với một số chi tiết về lý do tại sao lỗi đó xảy ra.
+Bất cứ khi nào các loại lỗi logic \(runtime error\) xảy ra, Python sẽ phát sinh một đối tượng ngoại lệ. Nếu không được xử lý đúng cách, chương trình sẽ in thông báo lỗi cùng với một số chi tiết về lý do tại sao lỗi đó xảy ra.
 
 Xem xét ví dụ sau:
 
