@@ -53,4 +53,12 @@ Traceback (most recent call last):
     a = 1 / 0
 ZeroDivisionError: division by zero
 ```
+```python
+open("imaginary.txt")
+Traceback (most recent call last):
+ File "<string>", line 301, in runcode
+ File "<interactive input>", line 1, in <module>
+FileNotFoundError: [Errno 2] No such file or directory: 'imaginary.txt'
+```
+# Ngoại lệ dựng sẵn
 
