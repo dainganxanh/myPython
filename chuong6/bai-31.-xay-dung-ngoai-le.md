@@ -33,3 +33,44 @@ while True:
 print(f'Thực hiện các thao tác với {a}')
 ```
 
+
+
+## Trò chơi đoán số
+
+```python
+class Error(Exception):
+    """Lớp cơ sở cho những ngoại lệ khác"""
+    pass
+
+class ValueTooSmallError(Error):
+    """Phát sinh khi số nhập vào nhỏ quá"""
+    pass
+
+class ValueTooLargeError(Error):
+    """Phát sinh khi số nhập vào lớn quá"""
+    pass
+
+# Sinh ngẫu nhiên một số nguyên
+import random as rd
+number = rd.randint(1,100)
+
+# nhập số đoán
+while True:
+    try:
+        n = int(input("Nhập vào số nguyên: "))
+        if n < number:
+            raise ValueTooSmallError
+        elif n > number:
+            raise ValueTooLargeError
+        break
+    except ValueTooSmallError:
+        print("Số này chưa đủ lớn - nhập lại nhé!")
+        print()
+    except ValueTooLargeError:
+        print("Số này lớn quá, thử lại xem!")
+        print()
+
+print("Xin chúc mừng! Bạn đã đoán chính xác.")
+
+```
+
