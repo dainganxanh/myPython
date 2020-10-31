@@ -6,7 +6,11 @@ description: Ngoại lệ do người dùng tự định nghĩa
 
 Trong lập trình Python, các ngoại lệ phát sinh khi lỗi logic. Ta cũng có thể sinh các ngoại lệ theo cách thủ công bằng cách sử dụng từ khóa raise.
 
-Ví dụ, chương trình sau yêu cầu nhập một số thỏa điều kiện, lặp đến khi nào người dùng nhập đúng mới thôi.
+Hãy xét một số ví dụ dưới đây và thực hành xây dựng ngoại lệ
+
+## Ví dụ 1
+
+Chương trình yêu cầu nhập một số thỏa điều kiện, lặp đến khi nào người dùng nhập đúng mới thôi.
 
 ```python
 while True:
@@ -33,9 +37,9 @@ while True:
 print(f'Thực hiện các thao tác với {a}')
 ```
 
+## Ví dụ 2
 
-
-## Trò chơi đoán số
+Trò chơi đoán số
 
 ```python
 class Error(Exception):
