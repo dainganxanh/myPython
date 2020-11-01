@@ -80,3 +80,53 @@ while True:
 print(f"Xin chúc mừng! Bạn đã đoán chính xác trong {landoan} lần đoán.")
 ```
 
+## Tùy chỉnh lớp ngoại lệ \(Exception Classes\)
+
+Phần này liên quan đến lớp \(class\) thuộc kiến thức lập trình hướng đối tượng. Ta có xem qua ví dụ và sẽ trở lại tìm hiểu sau khi học về Lớp trong lập trình hướng đối tượng ở chương sau .
+
+Ví dụ
+
+```python
+class LuongKhongHopLe(Exception):
+    """Ngoại lệ này pháp sinh khi có lỗi nhập liệu.
+
+    Attributes:
+        luong -- số liệu nhập vào có thể phát sinh lỗi
+        thongbao -- giải thích lỗi
+    """
+
+    def __init__(self, luong, thongbao='''Lương nhập vào 
+                        ngoài khoảng (5000, 15000)'''):
+        self.luong = luong
+        self.thongbao = thongbao
+        super().__init__(self.thongbao)
+
+
+luong = int(input("Nhập lương: "))
+if not 5000 < luong < 15000:
+    raise LuongKhongHopLe(luong)
+```
+
+```python
+class LuongKhongHopLe(Exception):
+    """Exception raised for errors in the input luong.
+
+    Attributes:
+        luong -- input luong which caused the error
+        thongbao -- explanation of the error
+    """
+
+    def __init__(self, luong, thongbao="Lương không trong khoảng (5000, 15000)"):
+        self.luong = luong
+        self.thongbao = thongbao
+        super().__init__(self.thongbao)
+
+    def __str__(self):
+        return f'{self.luong} -> {self.thongbao}'
+
+
+luong = int(input("Nhập số lương: "))
+if not 5000 < luong < 15000:
+    raise LuongKhongHopLe(luong)
+```
+
