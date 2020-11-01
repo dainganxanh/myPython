@@ -40,7 +40,7 @@
   * [Bài 30. Xử lý ngoại lệ](chuong6/bai-30.-xu-ly-ngoai-le.md)
   * [Bài 31. Xây dựng ngoại lệ](chuong6/bai-31.-xay-dung-ngoai-le.md)
 * [Chương VII. HƯỚNG ĐỐI TƯỢNG](chuong7/README.md)
-  * [Bài 32. Lập trình hướng đối tượng với Python](chuong7/bai-32.-lap-trinh-huong-doi-tuong-voi-python.md)
+  * [Bài 32. Lập trình hướng đối tượng](chuong7/bai-32.-lap-trinh-huong-doi-tuong.md)
   * [Bài 33. Đối tượng và Lớp](chuong7/bai-33.-doi-tuong-va-lop.md)
   * [Bài 34. Kế thừa](chuong7/bai-34.-ke-thua.md)
   * [Bài 35. Đa kế thừa](chuong7/bai-35.-da-ke-thua.md)
