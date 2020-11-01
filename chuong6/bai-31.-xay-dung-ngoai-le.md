@@ -39,7 +39,8 @@ print(f'Thực hiện các thao tác với {a}')
 
 ## Ví dụ 2
 
-Trò chơi đoán số
+Trò chơi đoán số.   
+Chương trình sẽ sinh ngẫu nhiên một số trong khoảng 1 đến 99. Người chơi nhập số từ bàn phím đến khi trùng với số được sinh ngẫu nhiên trước đó. Khi đoán đúng, chương trình sẽ thông báo chúc mừng và đưa ra số lần đã đoán.
 
 ```python
 class Loi(Exception):
