@@ -44,7 +44,7 @@
   * [Bài 33. Đối tượng và Lớp](chuong7/bai-33.-doi-tuong-va-lop.md)
   * [Bài 34. Kế thừa](chuong7/bai-34.-ke-thua.md)
   * [Bài 35. Đa kế thừa](chuong7/bai-35.-da-ke-thua.md)
-  * [Nạp chồng toán tử](chuong7/nap-chong-toan-tu.md)
+  * [Bài 36. Nạp chồng toán tử](chuong7/bai-36-nap-chong-toan-tu.md)
 * [Chương VIII. NGÀY - GIỜ](chuong8.md)
 * [Chương IX. CHỦ ĐỀ NÂNG CAO](chuong9.md)
 * [Phụ lục](phu-luc/README.md)
