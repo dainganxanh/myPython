@@ -42,15 +42,15 @@ print(f'Thực hiện các thao tác với {a}')
 Trò chơi đoán số
 
 ```python
-class Error(Exception):
+class Loi(Exception):
     """Lớp cơ sở cho những ngoại lệ khác"""
     pass
 
-class ValueTooSmallError(Error):
+class SoNhoQua(Loi):
     """Phát sinh khi số nhập vào nhỏ quá"""
     pass
 
-class ValueTooLargeError(Error):
+class SoLonQua(Loi):
     """Phát sinh khi số nhập vào lớn quá"""
     pass
 
@@ -59,22 +59,23 @@ import random as rd
 number = rd.randint(1,100)
 
 # nhập số đoán
+landoan = 0
 while True:
     try:
         n = int(input("Nhập vào số nguyên: "))
+        landoan +=1
         if n < number:
-            raise ValueTooSmallError
+            raise SoNhoQua
         elif n > number:
-            raise ValueTooLargeError
+            raise SoLonQua
         break
-    except ValueTooSmallError:
+    except SoNhoQua:
         print("Số này chưa đủ lớn - nhập lại nhé!")
         print()
-    except ValueTooLargeError:
+    except SoLonQua:
         print("Số này lớn quá, thử lại xem!")
         print()
 
-print("Xin chúc mừng! Bạn đã đoán chính xác.")
-
+print(f"Xin chúc mừng! Bạn đã đoán chính xác trong {landoan} lần đoán.")
 ```
 
