@@ -10,6 +10,7 @@
   * [Bài 6. Biến, Hằng](chuong1/bai-6.-bien-hang-trong-python.md)
   * [Bài 7. Kiểu dữ liệu](chuong1/bai-7.-kieu-du-lieu-trong-python.md)
   * [Bài 8. Thao tác với tệp \(cơ bản\)](chuong1/bai-8.-thao-tac-voi-tep-co-ban.md)
+  * [Bài 9. Tổng quan về Python](chuong1/bai-9.-tong-quan-ve-python.md)
   * [Bài tập chương 1](chuong1/bai-tap-chuong-1-1.md)
 * [Chương II. RẼ NHÁNH - LẶP](chuong2/README.md)
   * [Bài 10. Cấu trúc rẽ nhánh if…else](chuong2/bai-10.md)
