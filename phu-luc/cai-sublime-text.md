@@ -32,7 +32,7 @@ Gõ đoạn code sau:
     "env": {"PYTHONIOENCODING": "utf-8"}, 
 }
 ```
-Lưu ý: 
+*Lưu ý: *
 
 - Đường dẫn đến file python.exe phải chính xác theo máy cụ thể (lúc cài đặt Python)
 - Dòng env": {"PYTHONIOENCODING": "utf-8"} là để giúp Sublime Text có thể run Python với Unicode.
