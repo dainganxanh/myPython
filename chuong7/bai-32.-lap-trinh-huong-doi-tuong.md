@@ -24,9 +24,33 @@ Lớp \(Class\) là một kiểu dữ liệu đặc biệt do người dùng đ�
 
 Thuộc tính là các giá trị của lớp. Sau này khi các đối tượng được tạo ra từ lớp, thì thuộc tính của lớp lúc này sẽ trở thành các đặc điểm của đối tượng đó.
 
-### Phân biệt giữa Đối tượng \(Object\) và Lớp \(Class\):
+### Lớp \(Class\)
 
-Đối tượng \(Object\): có trạng thái và hành vi.
+Ta có thể hình dung class giống như là một bản mẫu \(template\), một khuôn mẫu. Ở đó ta khai báo các thuộc tính \(attribute\) và phương thức \(method\) nhằm miêu tả để từ đó ta tạo ra được những object \(đối tượng\).
 
-Lớp \(Class\): có thể được định nghĩa như là một template mô tả trạng thái và hành vi mà loại đối tượng của lớp hỗ trợ. Một đối tượng là một thực thể \(instance\) của một lớp
+Cú pháp để tạo một lớp
+
+```python
+class <tên_lớp>:
+    code thuộc tính và phương thức
+```
+
+Ví dụ:
+
+```python
+class ChimVet:
+    pass
+```
+
+### Đối tượng \(Object\)
+
+Một đối tượng \(còn gọi là instance\) là một khởi tạo của một lớp. 
+
+Khi lớp được định nghĩa, chỉ có mô tả cho đối tượng được định nghĩa. Do đó, không có bộ nhớ hoặc bộ nhớ nào được cấp phát. Khi khai báo đối tượng bằng việc gán cho một class thì lúc này bộ nhớ được cấp phát cho đối tượng. 
+
+Ví dụ
+
+```python
+v1 = Chimvet()
+```
 
