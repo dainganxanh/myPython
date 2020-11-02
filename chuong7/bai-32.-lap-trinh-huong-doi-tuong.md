@@ -18,7 +18,7 @@ Class và Object là hai khái niệm cơ bản trong lập trình hướng đ�
 
 Đối tượng \(Object\) là những thực thể tồn tại có hành vi.
 
-Ví dụ đối tượng là một xe ô tô có tên hãng, màu sắc, loại nguyên liệu, hành vi đi, dừng, đỗ, nổ máy...
+Ví dụ đối tượng là một con chim vẹt có tên, màu sắc, trọng lượng, hành vi \(tập nói, ăn, bay, nhảy...\)...
 
 Lớp \(Class\) là một kiểu dữ liệu đặc biệt do người dùng định nghĩa, tập hợp nhiều thuộc tính đặc trưng cho mọi đối tượng được tạo ra từ lớp đó.
 
@@ -51,7 +51,7 @@ Khi lớp được định nghĩa, chỉ có mô tả cho đối tượng đư�
 Ví dụ
 
 ```python
-v1 = Chimvet()
+v1 = ChimVet()
 ```
 
 
