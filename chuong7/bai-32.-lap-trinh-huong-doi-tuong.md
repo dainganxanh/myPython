@@ -6,17 +6,13 @@ description: Python Object Oriented Programming
 
 Lập trình hướng đối tượng \(Object-oriented programming, viết tắt: OOP\) là một kỹ thuật hỗ trợ, cho phép lập trình viên trực tiếp làm việc với các đối tượng mà họ định nghĩa lên. Hiệu quả của kĩ thuật này giúp tăng năng suất, đơn giản hoá độ phức tạp khi bảo trì cũng như mở rộng phần mềm. 
 
-Khái niệm về OOP trong Python tập trung vào việc tạo code sử dụng lại. Khái niệm này còn được gọi là DRY \(Don't Repeat Yourself\).
+Một đối tượng có hai đặc điểm, đó là \(1\) thuộc tính và \(2\) hành vi.
 
-## Các nguyên lý
+Khái niệm về OOP trong Python tập trung vào việc tạo code sử dụng lại. Khái niệm này còn được gọi là DRY \(Don't Repeat Yourself\). OOP trong Python tuân theo một số nguyên lý cơ bản là tính đóng gói, tính kế thừa và tính đa hình.
 
-Trong Python, khái niệm về OOP tuân theo một số nguyên lý cơ bản là tính đóng gói, tính kế thừa và tính đa hình.
-
-Tính kế thừa \(Inheritance\): cho phép một lớp \(class\) có thể kế thừa các thuộc tính và phương thức từ các lớp khác đã được định nghĩa.
-
-Tính đóng gói \(Encapsulation\): là quy tắc yêu cầu trạng thái bên trong của một đối tượng được bảo vệ và tránh truy cập được từ code bên ngoài \(tức là code bên ngoài không thể trực tiếp nhìn thấy và thay đổi trạng thái của đối tượng đó\).
-
-Tính đa hình \(Polymorphism\): là khái niệm mà hai hoặc nhiều lớp có những phương thức giống nhau nhưng có thể thực thi theo những cách thức khác nhau.
+* Tính kế thừa \(Inheritance\): cho phép một lớp \(class\) có thể kế thừa các thuộc tính và phương thức từ các lớp khác đã được định nghĩa.
+* Tính đóng gói \(Encapsulation\): là quy tắc yêu cầu trạng thái bên trong của một đối tượng được bảo vệ và tránh truy cập được từ code bên ngoài \(tức là code bên ngoài không thể trực tiếp nhìn thấy và thay đổi trạng thái của đối tượng đó\).
+* Tính đa hình \(Polymorphism\): là khái niệm mà hai hoặc nhiều lớp có những phương thức giống nhau nhưng có thể thực thi theo những cách thức khác nhau.
 
 ## Lớp \(Class\) và Đối tượng \(Object\)
 
