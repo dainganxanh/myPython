@@ -27,7 +27,8 @@ Gõ đoạn code sau:
 {
     "cmd": ["c:/Python/python.exe", "-u", "$file"],
     "file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
-    "selector": "source.python"
+    "selector": "source.python",
+	"env": {"PYTHONIOENCODING": "utf-8"}, `
 }
 ```
 Lưu ý: Đường dẫn đến file python.exe phải chính xác theo máy cụ thể (lúc cài đặt Python)
