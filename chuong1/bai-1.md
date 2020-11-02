@@ -34,13 +34,15 @@ Dưới đây là một số gợi ý cho người mới học Python:
 
 Search với từ khóa "Python Online Compiler" sẽ trả về kết quả với nhiều website khác nhau. Ví dụ [https://www.programiz.com/python-programming/online-compiler/](https://www.programiz.com/python-programming/online-compiler/) là một ứng dụng được cung cấp bởi Progamiz.
 
-### **2\)**    **Notepad++**
+### **2\)**    **Notepad++, Sublime Text, ...**
 
-Tải về tại đây: [https://notepad-plus-plus.org/downloads/](https://notepad-plus-plus.org/downloads/)
+Tải Notepad++ về tại đây: [https://notepad-plus-plus.org/downloads/](https://notepad-plus-plus.org/downloads/)
+
+Tải Sublime Text về tại đây: [https://www.sublimetext.com/3](https://www.sublimetext.com/3) 
 
 Đặc điểm: Đơn giản, dễ sử dụng.
 
-Nhược điểm: Phải cài thêm plugin để debug.
+Nhược điểm: Phải cài đặt plugin, thiết lập thêm mới có thể run python code.
 
 ### **3\)**    **Thonny**
 
