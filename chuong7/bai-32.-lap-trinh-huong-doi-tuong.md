@@ -54,5 +54,38 @@ Ví dụ
 v1 = ChimVet()
 ```
 
+Ví dụ 1. Tạo class và object trong Python
+
+```python
+class ConVet:
+    loai = "chim"
+
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+blu = ConVet("Vẹt Blu", 10)
+woo = ConVet("Vẹt Woo", 15)
+
+# truy xuất thuộc tính class
+print(f'Vẹt Blu thuộc loài {blu.__class__.loai}')
+print(f'Vẹt Woo thuộc loài {woo.__class__.loai}')
+
+# truy xuất thuộc tính đối tượng
+print(f"{blu.name} {blu.age} năm tuổi")
+print(f"{woo.name} {woo.age} năm tuổi")
+```
+
+Output:
+
+```python
+Vẹt Blu thuộc loài chim
+Vẹt Woo thuộc loài chim
+Vẹt Blu 10 năm tuổi
+Vẹt Woo 15 năm tuổi
+```
+
+
+
 
 
