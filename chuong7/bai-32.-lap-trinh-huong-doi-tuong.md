@@ -141,11 +141,11 @@ class Chim:
     def __init__(self):
         print("Chim được khởi tạo")
 
-    def whoisThis(self):
-        print("Lớp Chim")
-
-    def swim(self):
+    def boi(self):
         print("Bơi nhanh ")
+
+    def bay(self):
+        print("Chim hầu hết là biết bay")    
 
     def noio(self):
     	print('Hoang dã')
@@ -158,30 +158,38 @@ class CanhCut(Chim):
         super().__init__()
         print("Cánh cụt được khởi tạo")
 
-    def whoisThis(self):
-        print("Chim Cánh cụt")
-
-    def run(self):
+    def chay(self):
         print("Chạy nhanh ")
 
-chimZ = CanhCut()
+    def bay(self):
+        print("Chim cánh cụt thì không biết bay nhé")        
 
-chimZ.whoisThis()
-chimZ.swim()
-chimZ.run()
+chimA = Chim()
+chimA.bay()
+chimA.boi()
+print()
+
+chimZ = CanhCut()
+chimZ.boi()
+chimZ.chay()
 chimZ.noio()
+chimZ.bay()
 ```
 
 Output:
 
 ```python
 Chim được khởi tạo
+Chim hầu hết là biết bay
+Bơi nhanh 
+
+Chim được khởi tạo
 Cánh cụt được khởi tạo
-Chim Cánh cụt
 Bơi nhanh 
 Chạy nhanh 
 Hoang dã
+Chim cánh cụt thì không biết bay nhé
 ```
 
-Trong ví dụ trên ta dễ thấy lớp CanhCut thừa kế từ lớp Chim. Qua đó, đối tượng chimZ có thể gọi phương tức swim\(\) và noio\(\) trong khi lớp CanhCut không hề khai báo.
+Trong ví dụ trên ta dễ thấy lớp CanhCut thừa kế từ lớp Chim. Qua đó, đối tượng chimZ có thể gọi phương tức boi\(\) và noio\(\) trong khi lớp CanhCut không hề khai báo.
 
