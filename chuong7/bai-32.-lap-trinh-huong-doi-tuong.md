@@ -185,3 +185,5 @@ Chạy nhanh
 Hoang dã
 ```
 
+Trong ví dụ trên ta dễ thấy lớp CanhCut thừa kế từ lớp Chim. Qua đó, đối tượng chimZ có thể gọi phương tức swim\(\) và noio\(\) trong khi lớp CanhCut không hề khai báo.
+
