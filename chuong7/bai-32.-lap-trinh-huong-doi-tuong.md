@@ -38,9 +38,11 @@ class <tên_lớp>:
 Ví dụ:
 
 ```python
-class ChimVet:
+class ConVet:
     pass
 ```
+
+Thông thường \(và theo chuẩn format code Python PEP8\) thì tên lớp được viết hoa chữ đầu từ \(CapWord\).
 
 ### Đối tượng \(Object\)
 
@@ -51,7 +53,7 @@ Khi lớp được định nghĩa, chỉ có mô tả cho đối tượng đư�
 Ví dụ
 
 ```python
-v1 = ChimVet()
+v1 = ConVet()
 ```
 
 Ví dụ 1. Tạo class và object trong Python
@@ -84,6 +86,18 @@ Vẹt Woo thuộc loài chim
 Vẹt Blu 10 năm tuổi
 Vẹt Woo 15 năm tuổi
 ```
+
+Trong chương trình trên, ta đã tạo một class với tên ConVet và khai báo các thuộc tính \(đặc tính của một đối tượng\).
+
+Các thuộc tính được định nghĩa bên trong phương thức \_\_init\_\_ của lớp. Đây là phương thức khởi tạo \(constructor\) được gọi đầu tiên ngay sau khi đối tượng được tạo.
+
+Trong chương trình, ta tạo 2 đối tượng \(thể hiện\) của lớp ConVet gồm ble và woo.
+
+Ta gọi thuộc tính class bằng cú pháp: \_\_class\_\_.&lt;tên thuộc tính lớp&gt; \(vd. \_\_class\_\_.loai\); gọi thuộc tính đối tượng với cú pháp: &lt;tên đối tượng&gt;.&lt;tên thuộc tính&gt; \(vd: blu.name, blu.age\).
+
+
+
+
 
 
 
