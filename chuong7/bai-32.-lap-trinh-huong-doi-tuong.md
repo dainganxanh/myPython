@@ -70,8 +70,7 @@ em = ConVet("Vẹt Em", 10)
 anh = ConVet("Vẹt Anh", 15)
 
 # truy xuất thuộc tính class
-print(f'Vẹt Blu thuộc loài {anh.__class__.loai}')
-print(f'Vẹt Woo thuộc loài {em.__class__.loai}')
+print(f'Vẹt thuộc loài {anh.__class__.loai}')
 
 # truy xuất thuộc tính đối tượng
 print(f"{anh.name} {anh.age} năm tuổi")
@@ -81,8 +80,7 @@ print(f"{em.name} {em.age} năm tuổi")
 Output:
 
 ```python
-Vẹt Blu thuộc loài chim
-Vẹt Woo thuộc loài chim
+Vẹt thuộc loài chim
 Vẹt Anh 15 năm tuổi
 Vẹt Em 10 năm tuổi
 ```
