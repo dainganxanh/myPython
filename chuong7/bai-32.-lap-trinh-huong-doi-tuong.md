@@ -284,3 +284,15 @@ Vẹt không biết bơi
 Chim cánh cụt bơi rất nhanh
 ```
 
+Để sử dụng tính đa hình, ta đã tạo các 'giao diện chung', đó là hàm kt\_bay\(\), kt\_boi\(\) và gọi phương thức cùng có ở các đối tượng. 
+
+## Đáng chú ý với OOP
+
+Lập trình hướng đối tượng làm cho chương trình dễ hiểu và hiệu quả.
+
+Vì lớp có thể chia sẻ được, mã có thể được sử dụng lại.
+
+Dữ liệu an toàn và bảo mật với dữ liệu trừu tượng.
+
+Tính đa hình cho phép cùng một giao diện cho các đối tượng khác nhau, do đó các lập trình viên có thể viết mã hiệu quả.
+
