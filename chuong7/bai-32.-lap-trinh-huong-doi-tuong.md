@@ -24,7 +24,7 @@ Lớp \(Class\) là một kiểu dữ liệu đặc biệt do người dùng đ�
 
 Thuộc tính là các giá trị của lớp. Sau này khi các đối tượng được tạo ra từ lớp, thì thuộc tính của lớp lúc này sẽ trở thành các đặc điểm của đối tượng đó.
 
-### Lớp \(Class\)
+## Lớp \(Class\)
 
 Ta có thể hình dung class giống như là một bản mẫu \(template\), một khuôn mẫu. Ở đó ta khai báo các thuộc tính \(attribute\) và phương thức \(method\) nhằm miêu tả để từ đó ta tạo ra được những object \(đối tượng\).
 
@@ -44,7 +44,7 @@ class ConVet:
 
 Thông thường \(và theo chuẩn format code Python PEP8\) thì tên lớp được viết hoa chữ đầu từ \(CapWord\).
 
-### Đối tượng \(Object\)
+## Đối tượng \(Object\)
 
 Một đối tượng \(còn gọi là instance\) là một khởi tạo của một lớp. 
 
@@ -93,7 +93,7 @@ Trong chương trình, ta tạo 2 đối tượng \(thể hiện\) của lớp C
 
 Ta gọi thuộc tính class bằng cú pháp: \_\_class\_\_.&lt;tên thuộc tính lớp&gt; \(vd. \_\_class\_\_.loai\); gọi thuộc tính đối tượng với cú pháp: &lt;tên đối tượng&gt;.&lt;tên thuộc tính&gt; \(vd: blu.name, blu.age\).
 
-### Phương thức
+## Phương thức \(Methods\)
 
 Các phương thức là các hàm được định nghĩa bên trong phần thân của một lớp. Chúng được sử dụng để xác định các hành vi của một đối tượng.
 
@@ -128,7 +128,7 @@ Vẹt em hát bài AAAAAAAAAAAA
 Vẹt em đang nhảy múa
 ```
 
-### Kế thừa
+## Kế thừa \(Inheritance\)
 
 Kế thừa là một cách tạo một lớp mới để sử dụng các chi tiết của một lớp hiện có mà không cần sửa đổi nó. Lớp mới được hình thành là một lớp dẫn xuất \(hoặc lớp con\). Tương tự, lớp hiện có là một lớp cơ sở \(hoặc lớp cha\).
 
@@ -192,4 +192,8 @@ Chim cánh cụt thì không biết bay nhé
 ```
 
 Trong ví dụ trên ta dễ thấy lớp CanhCut thừa kế từ lớp Chim. Qua đó, đối tượng chimZ có thể gọi phương tức boi\(\) và noio\(\) trong khi lớp CanhCut không hề khai báo.
+
+## Đóng gói \(Encapsulation\)
+
+
 
