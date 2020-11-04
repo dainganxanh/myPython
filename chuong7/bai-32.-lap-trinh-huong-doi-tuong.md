@@ -195,7 +195,7 @@ Trong ví dụ trên ta dễ thấy lớp CanhCut thừa kế từ lớp Chim. Q
 
 ## Đóng gói \(Encapsulation\)
 
-Ta có thể hạn chế quyền truy cập vào các phương thức \(methods\) và biến \(variables\) trong class. Điều này ngăn dữ liệu khỏi bị sửa đổi trực tiếp và được gọi là 'đóng gói'. Trong Python, ta biểu thị các thuộc tính riêng \(private attributes\) bằng cách sử dụng dấu gạch dưới làm tiền tố, gạch đơn \_ hoặc gạch kép \_\_ .
+Ta có thể hạn chế quyền truy cập vào các phương thức \(methods\) và biến \(variables\) trong class. Điều này ngăn dữ liệu khỏi bị sửa đổi trực tiếp và được gọi là 'đóng gói'. Trong Python, ta biểu thị các thuộc tính riêng \(private attributes\) bằng cách sử dụng dấu 2 dấu gạch dưới làm tiền tố " \_\_ ".
 
 Ví dụ 4. Đóng gói dữ diệu
 
@@ -232,5 +232,55 @@ Giá bán: 900
 Giá bán: 1000
 ```
 
+## Tính đa hình \(Polymorphism\)
 
+Đa hình là một khả năng \(trong OOP\) sử dụng một giao diện chung cho nhiều biểu mẫu \(kiểu dữ liệu\).
+
+Giả sử, chúng ta cần tô màu cho một hình dạng, có nhiều lựa chọn hình dạng \(hình chữ nhật, hình vuông, hình tròn\). Tuy nhiên, chúng ta có thể sử dụng cùng một phương pháp để tô màu bất kỳ hình dạng nào. Khái niệm này được gọi là Đa hình.
+
+Ví dụ 5. Sử dụng tính đa hành
+
+```python
+class Vet:
+
+    def fly(self):
+        print("Vẹt có thể bay")
+    
+    def swim(self):
+        print("Vẹt không biết bơi")
+
+class Canhcut:
+
+    def fly(self):
+        print("Chim cánh cụt không thể bay")
+    
+    def swim(self):
+        print("Chim cánh cụt bơi rất nhanh")
+
+# common interface
+def kt_bay(bird):
+    bird.fly()
+
+def kt_boi(b):
+	b.swim()
+
+#instantiate objects
+con1 = Vet()
+con2 = Canhcut()
+
+# passing the object
+kt_bay(con1)
+kt_bay(con2)
+kt_boi(con1)
+kt_boi(con2)
+```
+
+Output:
+
+```python
+Vẹt có thể bay
+Chim cánh cụt không thể bay
+Vẹt không biết bơi
+Chim cánh cụt bơi rất nhanh
+```
 
