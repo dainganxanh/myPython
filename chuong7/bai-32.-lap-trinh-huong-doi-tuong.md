@@ -195,5 +195,42 @@ Trong ví dụ trên ta dễ thấy lớp CanhCut thừa kế từ lớp Chim. Q
 
 ## Đóng gói \(Encapsulation\)
 
+Ta có thể hạn chế quyền truy cập vào các phương thức \(methods\) và biến \(variables\) trong class. Điều này ngăn dữ liệu khỏi bị sửa đổi trực tiếp và được gọi là 'đóng gói'. Trong Python, ta biểu thị các thuộc tính riêng \(private attributes\) bằng cách sử dụng dấu gạch dưới làm tiền tố, gạch đơn \_ hoặc gạch kép \_\_ .
+
+Ví dụ 4. Đóng gói dữ diệu
+
+```python
+class Computer:
+
+    def __init__(self):
+        self.__giabaogia = 900
+
+    def dinhgia(self, price):
+        self.__giabaogia = price        
+
+    def baogia(self):
+        print(f"Giá bán: {self.__giabaogia}")
+
+
+c = Computer()
+c.baogia()
+
+# thử thay đổi giá 
+c.__giabaogia = 2000
+c.baogia()
+
+# đổi giá bằng phương thức
+c.dinhgia(1000)
+c.baogia()
+```
+
+Output:
+
+```python
+Giá bán: 900
+Giá bán: 900
+Giá bán: 1000
+```
+
 
 
