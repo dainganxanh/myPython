@@ -130,9 +130,58 @@ Vẹt em hát bài AAAAAAAAAAAA
 Vẹt em đang nhảy múa
 ```
 
+### Kế thừa
 
+Kế thừa là một cách tạo một lớp mới để sử dụng các chi tiết của một lớp hiện có mà không cần sửa đổi nó. Lớp mới được hình thành là một lớp dẫn xuất \(hoặc lớp con\). Tương tự, lớp hiện có là một lớp cơ sở \(hoặc lớp cha\).
 
+Ví dụ
 
+```python
+# parent class (lớp cha)
+class Chim:
+    
+    def __init__(self):
+        print("Chim được khởi tạo")
 
+    def whoisThis(self):
+        print("Lớp Chim")
 
+    def swim(self):
+        print("Bơi nhanh ")
+
+    def noio(self):
+    	print('Hoang dã')
+
+# child class (lớp con)
+class CanhCut(Chim):
+
+    def __init__(self):
+        # gọi hàm super()
+        super().__init__()
+        print("Cánh cụt được khởi tạo")
+
+    def whoisThis(self):
+        print("Chim Cánh cụt")
+
+    def run(self):
+        print("Chạy nhanh ")
+
+chimZ = CanhCut()
+
+chimZ.whoisThis()
+chimZ.swim()
+chimZ.run()
+chimZ.noio()
+```
+
+Output:
+
+```python
+Chim được khởi tạo
+Cánh cụt được khởi tạo
+Chim Cánh cụt
+Bơi nhanh 
+Chạy nhanh 
+Hoang dã
+```
 
