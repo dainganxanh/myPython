@@ -66,16 +66,16 @@ class ConVet:
         self.name = name
         self.age = age
 
-blu = ConVet("Vẹt Blu", 10)
-woo = ConVet("Vẹt Woo", 15)
+em = ConVet("Vẹt Em", 10)
+anh = ConVet("Vẹt Anh", 15)
 
 # truy xuất thuộc tính class
-print(f'Vẹt Blu thuộc loài {blu.__class__.loai}')
-print(f'Vẹt Woo thuộc loài {woo.__class__.loai}')
+print(f'Vẹt Blu thuộc loài {anh.__class__.loai}')
+print(f'Vẹt Woo thuộc loài {em.__class__.loai}')
 
 # truy xuất thuộc tính đối tượng
-print(f"{blu.name} {blu.age} năm tuổi")
-print(f"{woo.name} {woo.age} năm tuổi")
+print(f"{anh.name} {anh.age} năm tuổi")
+print(f"{em.name} {em.age} năm tuổi")
 ```
 
 Output:
@@ -83,8 +83,8 @@ Output:
 ```python
 Vẹt Blu thuộc loài chim
 Vẹt Woo thuộc loài chim
-Vẹt Blu 10 năm tuổi
-Vẹt Woo 15 năm tuổi
+Vẹt Anh 15 năm tuổi
+Vẹt Em 10 năm tuổi
 ```
 
 Trong chương trình trên, ta đã tạo một class với tên ConVet và khai báo các thuộc tính \(đặc tính của một đối tượng\).
@@ -95,7 +95,40 @@ Trong chương trình, ta tạo 2 đối tượng \(thể hiện\) của lớp C
 
 Ta gọi thuộc tính class bằng cú pháp: \_\_class\_\_.&lt;tên thuộc tính lớp&gt; \(vd. \_\_class\_\_.loai\); gọi thuộc tính đối tượng với cú pháp: &lt;tên đối tượng&gt;.&lt;tên thuộc tính&gt; \(vd: blu.name, blu.age\).
 
+### Phương thức
 
+Các phương thức là các hàm được định nghĩa bên trong phần thân của một lớp. Chúng được sử dụng để xác định các hành vi của một đối tượng.
+
+Ví dụ
+
+```python
+class ConVet:
+	# thuộc tính
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+    
+    # phương thức
+    def sing(self, song):
+        return f"{self.name} hát bài {song}"
+
+    def dance(self):
+        return f"{self.name} đang nhảy múa"
+
+# khởi tạo đối tượng
+em = ConVet("Vẹt em", 10)
+
+# gọi phương thức
+print(em.sing("AAAAAAAAAAAA"))
+print(em.dance())
+```
+
+Output:
+
+```python
+Vẹt em hát bài AAAAAAAAAAAA
+Vẹt em đang nhảy múa
+```
 
 
 
