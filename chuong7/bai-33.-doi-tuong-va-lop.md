@@ -49,8 +49,8 @@ We saw that the class object could be used to access different attributes.
 
 It can also be used to create new object instances \(instantiation\) of that class. The procedure to create an object is similar to a [function](https://www.programiz.com/python-programming/function) call.
 
-```text
->>> harry = Person()
+```python
+harry = Person()
 ```
 
 This will create a new object instance named harry. We can access the attributes of objects using the object name prefix.
@@ -59,7 +59,7 @@ Attributes may be data or method. Methods of an object are corresponding functio
 
 This means to say, since `Person.greet` is a function object \(attribute of class\), `Person.greet` will be a method object.
 
-```text
+```python
 class Person:
     "This is a person class"
     age = 10
@@ -84,7 +84,7 @@ harry.greet()
 
 **Output**
 
-```text
+```python
 <function Person.greet at 0x7fd288e4e160>
 <bound method Person.greet of <__main__.Person object at 0x7fd288e9fa30>>
 Hello
@@ -108,7 +108,7 @@ Of one particular interest is the `__init__()` function. This special function g
 
 This type of function is also called constructors in Object Oriented Programming \(OOP\). We normally use it to initialize all the variables.
 
-```text
+```python
 class ComplexNumber:
     def __init__(self, r=0, i=0):
         self.real = r
@@ -157,7 +157,7 @@ An interesting thing to note in the above step is that attributes of an object c
 
 Any attribute of an object can be deleted anytime, using the `del` statement. Try the following on the Python shell to see the output.
 
-```text
+```python
 >>> num1 = ComplexNumber(2,3)
 >>> del num1.imag
 >>> num1.get_data()
@@ -174,7 +174,7 @@ AttributeError: 'ComplexNumber' object has no attribute 'get_data'
 
 We can even delete the object itself, using the del statement.
 
-```text
+```python
 >>> c1 = ComplexNumber(1,3)
 >>> del c1
 >>> c1
