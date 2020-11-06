@@ -50,7 +50,7 @@
 * [Chương IX. CHỦ ĐỀ NÂNG CAO](chuong9.md)
 * [Phụ lục](phu-luc/README.md)
   * [Hàm map\(\)](phu-luc/ham-map.md)
-  * [Untitled](phu-luc/untitled.md)
+  * [Cài Sublime Text để code Python](phu-luc/untitled.md)
 * [Tài liệu tham khảo](tai-lieu-tham-khao.md)
 * [www.dainganxanh.com](http://www.dainganxanh.com/)
 * [Các khóa học Python](https://python.neolms.com/)
