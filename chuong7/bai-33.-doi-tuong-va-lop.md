@@ -8,7 +8,7 @@ description: Python Objects and Classes
 
 Ta có thể hình dung class như một bản phác thảo \(nguyên mẫu\) của một ngôi nhà. Nó chứa tất cả các chi tiết về sàn nhà, cửa ra vào, cửa sổ,... Dựa trên những mô tả này, chúng ta sẽ xây \(hoặc in 3D\) các ngôi nhà và nhà ở đây chính là đối tượng.
 
-### Định nghĩa một Class <a id="define"></a>
+### Khai báo một Class <a id="define"></a>
 
 Cú pháp khai báo \(định nghĩa\) một Class như sau
 
@@ -43,21 +43,21 @@ print(Person.greet)
 print(Person.__doc__)
 ```
 
-### Creating an Object in Python <a id="create"></a>
+### Tạo đối tượng \(Object\) <a id="create"></a>
 
-We saw that the class object could be used to access different attributes.
-
-It can also be used to create new object instances \(instantiation\) of that class. The procedure to create an object is similar to a [function](https://www.programiz.com/python-programming/function) call.
+Đối tượng trong class có thể được sử dụng để truy cập các thuộc tính khác nhau và tạo các instance mới của lớp đó. Thủ tục để tạo một đối tượng tương tự như cách chúng ta gọi hàm.
 
 ```python
 harry = Person()
 ```
 
-This will create a new object instance named harry. We can access the attributes of objects using the object name prefix.
+Thao tác trên sẽ tạo một cá thể đối tượng mới có tên là harry. Chúng ta có thể truy cập các thuộc tính của đối tượng bằng tiền tố tên đối tượng. 
 
-Attributes may be data or method. Methods of an object are corresponding functions of that class.
+Các thuộc tính có thể là dữ liệu hoặc phương thức. Các phương thức của một đối tượng là các hàm tương ứng của lớp đó.
 
 This means to say, since `Person.greet` is a function object \(attribute of class\), `Person.greet` will be a method object.
+
+Điều này có nghĩa là, vì Person.greet là một đối tượng hàm \(thuộc tính của lớp\), nên Person.greet sẽ là một đối tượng phương thức.
 
 ```python
 class Person:
