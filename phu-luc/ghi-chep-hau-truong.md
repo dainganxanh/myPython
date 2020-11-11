@@ -2,12 +2,9 @@
 description: Ghi chép trong quá trình biên soạn tài liệu
 ---
 
-# Ghi chép hậu trường
+# Ghi chép - ghi chú
 
-{% embed url="https://colab.research.google.com/drive/1ZvsCX1WmCbCAX2NreN0FY8Gc8g2tPyVr?usp=sharing" %}
-
-
-### Tách dữ liệu từ một dòng nhập
+## Tách dữ liệu từ một dòng nhập
 
 ```python
 a = input()
@@ -19,7 +16,7 @@ print(x)
 print(y)
 ```
 
-### Chèn ký tự vào xâu bằng rjust\(\) và ljust\(\) 
+## Chèn ký tự vào xâu bằng rjust\(\) và ljust\(\)
 
 ```python
 # rjust() và ljust() chèn thêm vào xâu n-len(s) ký tự
@@ -32,9 +29,7 @@ print(xr)
 print(xl)
 ```
 
-
-
-### Bung nén tham số tuple, dict
+## Bung nén tham số tuple, dict
 
 ```python
 # Function argument unpacking
@@ -49,7 +44,7 @@ myfunc(*a)
 myfunc(**b)
 ```
 
-### Lấy chỉ số list \(list index\)
+## Lấy chỉ số list \(list index\)
 
 ```python
 lst = [1,2,3]
@@ -57,7 +52,7 @@ print(lst.index(3))
 # out: 2
 ```
 
-### Đảo ngược list, string
+## Đảo ngược list, string
 
 ```python
 s = 'abcd'
@@ -70,7 +65,7 @@ print(ms)        # ['a', 'b', 'c', 'd']
 print(mss)       # ['d', 'c', 'b', 'a']
 ```
 
-### Cắt xâu string, list \(slide\)
+## Cắt xâu string, list \(slide\)
 
 ```python
 s = '123456789'
@@ -85,7 +80,7 @@ print(ss[-2:])
 print(ss[1:-2])
 ```
 
-### Remove phần tử trùng lặp trong list
+## Remove phần tử trùng lặp trong list
 
 Đơn giản chỉ bằng cách ép kiểu set và trả lại list
 
@@ -97,7 +92,7 @@ print(a)
 # Output: [1, 2, 3, 4, 5]
 ```
 
-### Ép kiểu phần tử list
+## Ép kiểu phần tử list
 
 Chuyển các phần tử của list từ str sang int và ngược lại. [Xem thêm bài map\(\) ](ham-map.md)
 
@@ -111,7 +106,7 @@ print(a, b)
 # Output: [1, 2, 3, 4, 5] [1, 2, 3, 4, 5]
 ```
 
-###  Phân biệt list, tuple, set, dict
+## Phân biệt list, tuple, set, dict
 
 Khác biệt giữa List, Dict, Tuple, Set trong Python
 
@@ -121,3 +116,6 @@ Khác biệt giữa List, Dict, Tuple, Set trong Python
 | Tuple | Giá trị không thể thay đổi |  | x | \(\) | tuple\(\) |
 | Set | Giá trị là duy nhất | x |  | {} | set\(\) |
 | Dict | Key: Value | x |  | {} | dict\(\) |
+
+{% embed url="https://colab.research.google.com/drive/1ZvsCX1WmCbCAX2NreN0FY8Gc8g2tPyVr?usp=sharing" caption="" %}
+

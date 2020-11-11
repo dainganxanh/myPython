@@ -66,7 +66,7 @@
 * [Phụ lục](phu-luc/README.md)
   * [Hàm map\(\)](phu-luc/ham-map.md)
   * [Cài Sublime Text để code Python](phu-luc/untitled.md)
-  * [Ghi chép hậu trường](phu-luc/ghi-chep-hau-truong.md)
+  * [Ghi chép - ghi chú](phu-luc/ghi-chep-hau-truong.md)
 * [Tài liệu tham khảo](tai-lieu-tham-khao.md)
 * [www.dainganxanh.com](http://www.dainganxanh.com/)
 * [Các khóa học Python](https://python.neolms.com/)
