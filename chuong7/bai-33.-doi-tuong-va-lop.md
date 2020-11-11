@@ -98,33 +98,33 @@ Of one particular interest is the `__init__()` function. This special function g
 This type of function is also called constructors in Object Oriented Programming \(OOP\). We normally use it to initialize all the variables.
 
 ```python
-class ComplexNumber:
+class SoPhuc:
     def __init__(self, r=0, i=0):
-        self.real = r
-        self.imag = i
+        self.thuc = r
+        self.ao = i
 
-    def get_data(self):
-        print(f'{self.real}+{self.imag}j')
+    def hienthi(self):
+        print(f'{self.thuc}+{self.ao}j')
 
 
-# Create a new ComplexNumber object
-num1 = ComplexNumber(2, 3)
+# Tạo đối tượng 
+num1 = SoPhuc(2, 3)
 
-# Call get_data() method
+# Gọi phương thức hienthi()
 # Output: 2+3j
-num1.get_data()
+num1.hienthi()
 
-# Create another ComplexNumber object
-# and create a new attribute 'attr'
-num2 = ComplexNumber(5)
+# Tạo đối tượng SoPhuc khác
+# thêm thuộc tính 'attr'
+num2 = SoPhuc(5)
 num2.attr = 10
 
 # Output: (5, 0, 10)
-print((num2.real, num2.imag, num2.attr))
+print((num2.thuc, num2.ao, num2.attr))
 
-# but c1 object doesn't have attribute 'attr'
-# AttributeError: 'ComplexNumber' object has no attribute 'attr'
-print(num1.attr)
+# thuộc tính 'attr' được tạo cho đối tượng num2 nhưng không tồn tại cho num1
+# AttributeError: 'SoPhuc' object has no attribute 'attr'
+# print(num1.attr)
 ```
 
 **Output**
@@ -132,10 +132,6 @@ print(num1.attr)
 ```text
 2+3j
 (5, 0, 10)
-Traceback (most recent call last):
-  File "<string>", line 27, in <module>
-    print(num1.attr)
-AttributeError: 'ComplexNumber' object has no attribute 'attr'
 ```
 
 In the above example, we defined a new class to represent complex numbers. It has two functions, `__init__()` to initialize the variables \(defaults to zero\) and `get_data()` to display the number properly.
