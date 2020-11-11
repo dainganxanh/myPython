@@ -4,7 +4,7 @@ description: Python Inheritance
 
 # Bài 34. Kế thừa
 
-### Inheritance in Python <a id="what"></a>
+### Kế thừa trong Python \(Inheritance\) <a id="what"></a>
 
 Kế thừa là một tính năng mạnh mẽ trong lập trình hướng đối tượng. 
 
