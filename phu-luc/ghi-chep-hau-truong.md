@@ -117,5 +117,9 @@ Khác biệt giữa List, Dict, Tuple, Set trong Python
 | Set | Giá trị là duy nhất | x |  | {} | set\(\) |
 | Dict | Key: Value | x |  | {} | dict\(\) |
 
+## Colab Notebook
+
 {% embed url="https://colab.research.google.com/drive/1ZvsCX1WmCbCAX2NreN0FY8Gc8g2tPyVr?usp=sharing" caption="" %}
+
+
 
