@@ -25,22 +25,22 @@ Ngoài ra còn có các thuộc tính đặc biệt được bắt đầu bằng
 Ngay sau khi chúng ta định nghĩa một Class, một đối tượng lớp mới có cùng tên cũng được tạo. Đối tượng lớp này cho phép chúng ta truy cập các thuộc tính khác nhau cũng như khởi tạo các đối tượng mới của lớp đó.
 
 ```python
-class Person:
-    "This is a person class"
-    age = 10
+class Hocsinh:
+    "Đây là một class có tên là Hocsinh"
+    tuoi = 10
 
-    def greet(self):
-        print('Hello')
+    def chao(self):
+        print('Xin chào!')
 
 
 # Output: 10
-print(Person.age)
+print(Hocsinh.tuoi)
 
-# Output: <function Person.greet>
-print(Person.greet)
+# Output: <function Hocsinh.chao>
+print(Hocsinh.chao)
 
-# Output: 'This is my second class'
-print(Person.__doc__)
+# Output: 'Đây là một class có tên là Hocsinh'
+print(Hocsinh.__doc__)
 ```
 
 ### Tạo đối tượng \(Object\) <a id="create"></a>
@@ -48,57 +48,46 @@ print(Person.__doc__)
 Đối tượng trong class có thể được sử dụng để truy cập các thuộc tính khác nhau và tạo các instance mới của lớp đó. Thủ tục để tạo một đối tượng tương tự như cách chúng ta gọi hàm.
 
 ```python
-harry = Person()
+hs = Hocsinh()
 ```
 
-Thao tác trên sẽ tạo một cá thể đối tượng mới có tên là harry. Chúng ta có thể truy cập các thuộc tính của đối tượng bằng tiền tố tên đối tượng. 
+Thao tác trên sẽ tạo một đối tượng mới có tên là hs. Chúng ta có thể truy cập các thuộc tính của đối tượng bằng tiền tố tên đối tượng. 
 
 Các thuộc tính có thể là dữ liệu hoặc phương thức. Các phương thức của một đối tượng là các hàm tương ứng của lớp đó.
 
-This means to say, since `Person.greet` is a function object \(attribute of class\), `Person.greet` will be a method object.
-
-Điều này có nghĩa là, vì Person.greet là một đối tượng hàm \(thuộc tính của lớp\), nên Person.greet sẽ là một đối tượng phương thức.
+Xem ví dụ sau:
 
 ```python
-class Person:
-    "This is a person class"
-    age = 10
+class Hocsinh:
+    tuoi = 10
 
-    def greet(self):
-        print('Hello')
+    def chao(self):
+        print('Xin chào!')
 
 
-# create a new object of Person class
-harry = Person()
+# Tạo một đối tượng mới theo class Hocsinh
+hs = Hocsinh()
 
-# Output: <function Person.greet>
-print(Person.greet)
+# Output: <function Hocsinh.chao at ... >
+print(Hocsinh.chao)
 
-# Output: <bound method Person.greet of <__main__.Person object>>
-print(harry.greet)
+# Output: <bound method Hocsinh.chao of <__main__.Hocsinh object at ...>>
+print(hs.chao)
 
-# Calling object's greet() method
-# Output: Hello
-harry.greet()
+# Gọi phương thức chao()
+# Output: Xin chào!
+hs.chao()
 ```
 
 **Output**
 
 ```python
-<function Person.greet at 0x7fd288e4e160>
-<bound method Person.greet of <__main__.Person object at 0x7fd288e9fa30>>
-Hello
+<function Hocsinh.chao at 0x00000133B8A57EE0>
+<bound method Hocsinh.chao of <__main__.Hocsinh object at 0x00000133B8A45FD0>>
+Xin chào!
 ```
 
-You may have noticed the `self` parameter in function definition inside the class but we called the method simply as `harry.greet()` without any [arguments](https://www.programiz.com/python-programming/function-argument). It still worked.
-
-This is because, whenever an object calls its method, the object itself is passed as the first argument. So, `harry.greet()` translates into `Person.greet(harry)`.
-
-In general, calling a method with a list of n arguments is equivalent to calling the corresponding function with an argument list that is created by inserting the method's object before the first argument.
-
-For these reasons, the first argument of the function in class must be the object itself. This is conventionally called self. It can be named otherwise but we highly recommend to follow the convention.
-
-Now you must be familiar with class object, instance object, function object, method object and their differences.
+Tham số self của hàm trong class là tham số mặc định ngầm gán bởi chính đối tượng mỗi khi đối tượng được gọi. Việc gọi phương thức chao\(\) thông qua đối tượng  `hs.chao()` tương đương với gọi phương thức chao\(\) từ Class `Hocsinh.chao(hs)`.
 
 ### Constructors in Python <a id="constructor"></a>
 
