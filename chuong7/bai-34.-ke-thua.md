@@ -41,7 +41,7 @@ class Tamgiac(Dagiac):
     def __init__(self):
         Dagiac.__init__(self,3)
 
-    def dientich(self):
+    def dientichTG(self):
         a, b, c = self.canh
         s = (a + b + c) / 2
         dt = (s*(s-a)*(s-b)*(s-c)) ** 0.5
@@ -53,7 +53,7 @@ tg.nhapcanh()
 
 tg.xemcanh()
 
-tg.dientich()
+tg.dientichTG()
 ```
 
 ```python
