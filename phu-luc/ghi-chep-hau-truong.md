@@ -4,6 +4,23 @@ description: Ghi chép trong quá trình biên soạn tài liệu
 
 # Ghi chép hậu trường
 
+## String 
+
+### Chèn ký tự vào xâu bằng rjust\(\) và ljust\(\) 
+
+```python
+# rjust() và ljust() chèn thêm vào xâu n-len(s) ký tự
+s = "banana"
+xr = s.rjust(20, "-")
+xl = s.ljust(20, '-')
+# Output: --------------banana
+print(xr)
+# Output: banana--------------
+print(xl)
+```
+
+
+
 ### Bung nén tham số tuple, dict
 
 ```python
