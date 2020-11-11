@@ -67,49 +67,11 @@ Cạnh 3 là 4.0
 Diện tích của tam giác là 6.00
 ```
 
-This class has data attributes to store the number of sides n and magnitude of each side as a list called sides.
+Ở lớp Dagiac có các thuộc tính gồm số cạnh và một list lưu độ dài mỗi cạnh. Các phương thức nhapcanh\(\) và xemcanh\(\) để nhập độ dài cạnh và hiển thị các cạnh đã nhập.
 
-The `inputSides()` method takes in the magnitude of each side and `dispSides()` displays these side lengths.
+Ta xây dựng class Tamgiac thừa kế từ lớp Dagiac. Theo đó lớp Tamgiac thừa kế tất cả các thuộc tính, phương thức từ lớp cha là class Dagiac. Vì vậy, dùng lớp Tamgiac không có phương thức nhapcanh\(\) và xemcanh\(\) nhưng ta vẫn có thể gọi và sử dụng trong chương trình.
 
-A triangle is a polygon with 3 sides. So, we can create a class called Triangle which inherits from Polygon. This makes all the attributes of Polygon class available to the Triangle class.
 
-We don't need to define them again \(code reusability\). Triangle can be defined as follows.
-
-```text
-class Triangle(Polygon):
-    def __init__(self):
-        Polygon.__init__(self,3)
-
-    def findArea(self):
-        a, b, c = self.sides
-        # calculate the semi-perimeter
-        s = (a + b + c) / 2
-        area = (s*(s-a)*(s-b)*(s-c)) ** 0.5
-        print('The area of the triangle is %0.2f' %area)
-```
-
-However, class `Triangle` has a new method `findArea()` to find and print the area of the triangle. Here is a sample run.
-
-```text
->>> t = Triangle()
-
->>> t.inputSides()
-Enter side 1 : 3
-Enter side 2 : 5
-Enter side 3 : 4
-
->>> t.dispSides()
-Side 1 is 3.0
-Side 2 is 5.0
-Side 3 is 4.0
-
->>> t.findArea()
-The area of the triangle is 6.00
-```
-
-We can see that even though we did not define methods like `inputSides()` or `dispSides()` for class `Triangle` separately, we were able to use them.
-
-If an attribute is not found in the class itself, the search continues to the base class. This repeats recursively, if the base class is itself derived from other classes.
 
 ### Method Overriding in Python <a id="method"></a>
 
