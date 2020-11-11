@@ -89,16 +89,13 @@ Xin chào!
 
 Tham số self của hàm trong class là tham số mặc định ngầm gán bởi chính đối tượng mỗi khi đối tượng được gọi. Việc gọi phương thức chao\(\) thông qua đối tượng  `hs.chao()` tương đương với gọi phương thức chao\(\) từ Class `Hocsinh.chao(hs)`.
 
-### Constructors in Python <a id="constructor"></a>
+### Constructors  <a id="constructor"></a>
 
-Class functions that begin with double underscore `__` are called special functions as they have special meaning.
-
-Of one particular interest is the `__init__()` function. This special function gets called whenever a new object of that class is instantiated.
-
-This type of function is also called constructors in Object Oriented Programming \(OOP\). We normally use it to initialize all the variables.
+Hàm trong Class được bắt đầu với dấu gạch dưới kép `__` là các hàm đặc biệt, mang các ý nghĩa đặc biệt. Một trong đó là hàm `__init__()`. Hàm này được gọi bất cứ khi nào khởi tạo một đối tượng, một biến mới trong class và được gọi là **constructor** trong lập trình hướng đối tượng.
 
 ```python
 class SoPhuc:
+
     def __init__(self, r=0, i=0):
         self.thuc = r
         self.ao = i
@@ -134,43 +131,60 @@ print((num2.thuc, num2.ao, num2.attr))
 (5, 0, 10)
 ```
 
-In the above example, we defined a new class to represent complex numbers. It has two functions, `__init__()` to initialize the variables \(defaults to zero\) and `get_data()` to display the number properly.
-
-An interesting thing to note in the above step is that attributes of an object can be created on the fly. We created a new attribute attr for object num2 and read it as well. But this does not create that attribute for object num1.
-
-### Deleting Attributes and Objects <a id="delete"></a>
+### Xóa bỏ thuộc tính và đối tượng
 
 Any attribute of an object can be deleted anytime, using the `del` statement. Try the following on the Python shell to see the output.
 
 ```python
->>> num1 = ComplexNumber(2,3)
->>> del num1.imag
->>> num1.get_data()
-Traceback (most recent call last):
-...
-AttributeError: 'ComplexNumber' object has no attribute 'imag'
+class SoPhuc:
+    def __init__(self, r=0, i=0):
+        self.thuc = r
+        self.ao = i
 
->>> del ComplexNumber.get_data
->>> num1.get_data()
-Traceback (most recent call last):
-...
-AttributeError: 'ComplexNumber' object has no attribute 'get_data'
+    def hienthi(self):
+        print(f'{self.thuc}+{self.ao}j')
+
+
+# Tạo đối tượng 
+num1 = SoPhuc(2, 3)
+
+# Gọi phương thức hienthi()
+# Output: 2+3j
+num1.hienthi()
+
+# Tạo đối tượng SoPhuc khác
+# thêm thuộc tính 'attr'
+num2 = SoPhuc(5)
+num2.attr = 10
+
+# Output: (5, 0, 10)
+print((num2.thuc, num2.ao, num2.attr))
+
+# thuộc tính 'attr' được tạo cho đối tượng num2 nhưng không tồn tại cho num1
+# AttributeError: 'SoPhuc' object has no attribute 'attr'
+# print(num1.attr)
+
+# xóa phần ảo của đối tượng num1
+del num1.ao 
+# Lệnh sau sẽ gây lỗi vì không tồn tại thuộc tính 'ao'
+# 'SoPhuc' object has no attribute 'ao'
+print(num1.hienthi())
+
+
+del SoPhuc.hienthi
+# AttributeError: 'SoPhuc' object has no attribute 'hienthi'
+print(num1.hienthi())
+
 ```
 
-We can even delete the object itself, using the del statement.
+Ta có thể xóa bằng chính tên đối tượng với câu lệnh `del`.
 
 ```python
->>> c1 = ComplexNumber(1,3)
->>> del c1
->>> c1
-Traceback (most recent call last):
-...
-NameError: name 'c1' is not defined
+c1 = SoPhuc(1,3)
+del c1
+# NameError: name 'c1' is not defined
+print(c1)
 ```
 
-Actually, it is more complicated than that. When we do `c1 = ComplexNumber(1,3)`, a new instance object is created in memory and the name c1 binds with it.
 
-On the command `del c1`, this binding is removed and the name c1 is deleted from the corresponding namespace. The object however continues to exist in memory and if no other name is bound to it, it is later automatically destroyed.
-
-This automatic destruction of unreferenced objects in Python is also called garbage collection.![Deleting Object in Python](https://cdn.programiz.com/sites/tutorial2program/files/objectReference.jpg)Deleting objects in Python removes the name binding
 
