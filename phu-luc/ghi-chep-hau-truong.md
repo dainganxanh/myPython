@@ -4,17 +4,8 @@ description: Ghi chép trong quá trình biên soạn tài liệu
 
 # Ghi chép hậu trường
 
-{% tabs %}
-{% tab title="Ghi chép" %}
-Ghi chép trong quá trình biên soạn
-
-
-{% endtab %}
-
-{% tab title="Colab Note" %}
 {% embed url="https://colab.research.google.com/drive/1ZvsCX1WmCbCAX2NreN0FY8Gc8g2tPyVr?usp=sharing" %}
-{% endtab %}
-{% endtabs %}
+
 
 ### Tách dữ liệu từ một dòng nhập
 
