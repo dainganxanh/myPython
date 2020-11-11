@@ -4,8 +4,6 @@ description: Ghi chép trong quá trình biên soạn tài liệu
 
 # Ghi chép hậu trường
 
-## String 
-
 ### Chèn ký tự vào xâu bằng rjust\(\) và ljust\(\) 
 
 ```python
