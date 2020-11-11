@@ -6,39 +6,65 @@ description: Python Inheritance
 
 ### Inheritance in Python <a id="what"></a>
 
-Inheritance is a powerful feature in object oriented programming.
+Kế thừa là một tính năng mạnh mẽ trong lập trình hướng đối tượng. 
 
-It refers to defining a new [class](https://www.programiz.com/python-programming/class) with little or no modification to an existing class. The new class is called **derived \(or child\) class** and the one from which it inherits is called the **base \(or parent\) class**.
+Kế thừa \(Inheritance\) cho phép một lớp \(class\) có thể kế thừa các thuộc tính và phương thức từ các lớp khác đã được định nghĩa. Lớp đã có gọi là lớp cha \(base class hoặc parent class\), lớp mới phát sinh gọi là lớp con \(child class hoặc derived class\). Lớp con kế thừa tất cả thành phần của lớp cha, có thể mở rộng các thành phần kế thừa và bổ sung thêm các thành phần mới.
 
-#### Python Inheritance Syntax <a id="syntax"></a>
+#### Cú pháp khai báo <a id="syntax"></a>
 
-```text
-class BaseClass:
-  Body of base class
-class DerivedClass(BaseClass):
-  Body of derived class
+```python
+class LopCha:
+  # Các thành phần trong lớp cha
+class LopCon(LopCha):
+  # Các thành phần trong lớp con
 ```
 
-Derived class inherits features from the base class where new features can be added to it. This results in re-usability of code.
+#### Ví dụ về kế thừa trong Python <a id="example"></a>
 
-#### Example of Inheritance in Python <a id="example"></a>
+Xét ví dụ sau
 
-To demonstrate the use of inheritance, let us take an example.
+```python
+class Dagiac:
+    def __init__(self, socanh):
+        self.n = socanh
+        self.canh = [0 for i in range(socanh)]
 
-A polygon is a closed figure with 3 or more sides. Say, we have a class called `Polygon` defined as follows.
+    def nhapcanh(self):
+        self.canh = [float(input(f"Nhập cạnh {i+1}: ")) for i in range(self.n)]
 
-```text
-class Polygon:
-    def __init__(self, no_of_sides):
-        self.n = no_of_sides
-        self.sides = [0 for i in range(no_of_sides)]
-
-    def inputSides(self):
-        self.sides = [float(input("Enter side "+str(i+1)+" : ")) for i in range(self.n)]
-
-    def dispSides(self):
+    def xemcanh(self):
         for i in range(self.n):
-            print("Side",i+1,"is",self.sides[i])
+            #print("Cạnh",i+1,"là",self.canh[i])
+            print(f'Cạnh {i+1} là {self.canh[i]}')
+            
+class Tamgiac(Dagiac):
+    def __init__(self):
+        Dagiac.__init__(self,3)
+
+    def dientich(self):
+        a, b, c = self.canh
+        s = (a + b + c) / 2
+        dt = (s*(s-a)*(s-b)*(s-c)) ** 0.5
+        print(f'Diện tích của tam giác là {dt:.2f}')            
+
+tg = Tamgiac()
+
+tg.nhapcanh()
+
+tg.xemcanh()
+
+tg.dientich()
+```
+
+```python
+Nhập cạnh 1: 5
+Nhập cạnh 2: 3
+Nhập cạnh 3: 4
+
+Cạnh 1 là 5.0
+Cạnh 2 là 3.0
+Cạnh 3 là 4.0
+Diện tích của tam giác là 6.00
 ```
 
 This class has data attributes to store the number of sides n and magnitude of each side as a list called sides.
