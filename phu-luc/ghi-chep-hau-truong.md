@@ -4,6 +4,18 @@ description: Ghi chép trong quá trình biên soạn tài liệu
 
 # Ghi chép hậu trường
 
+### Tách dữ liệu từ một dòng nhập
+
+```python
+a = input()
+a = 'Hello! Nice to see you!'
+x, *y = a.split()
+# Hello!
+print(x)
+# ['Nice', 'to', 'see', 'you!'] 
+print(y)
+```
+
 ### Chèn ký tự vào xâu bằng rjust\(\) và ljust\(\) 
 
 ```python
