@@ -16,7 +16,7 @@ This feature in Python that allows the same operator to have different meaning a
 
 So what happens when we use them with objects of a user-defined class? Let us consider the following class, which tries to simulate a point in 2-D coordinate system.
 
-```text
+```python
 class Point:
     def __init__(self, x=0, y=0):
         self.x = x
@@ -30,7 +30,7 @@ print(p1+p2)
 
 **Output**
 
-```text
+```python
 Traceback (most recent call last):
   File "<string>", line 9, in <module>
     print(p1+p2)
@@ -51,7 +51,7 @@ There are numerous other special functions in Python. Visit [Python Special Func
 
 Using special functions, we can make our class compatible with built-in functions.
 
-```text
+```python
 >>> p1 = Point(2,3)
 >>> print(p1)
 <__main__.Point object at 0x00000000031F8CC0>
@@ -59,7 +59,7 @@ Using special functions, we can make our class compatible with built-in function
 
 Suppose we want the `print()` function to print the coordinates of the `Point` object instead of what we got. We can define a `__str__()` method in our class that controls how the object gets printed. Let's look at how we can achieve this:
 
-```text
+```python
 class Point:
     def __init__(self, x = 0, y = 0):
         self.x = x
@@ -71,7 +71,7 @@ class Point:
 
 Now let's try the `print()` function again.
 
-```text
+```python
 class Point:
     def __init__(self, x=0, y=0):
         self.x = x
@@ -93,7 +93,7 @@ print(p1)
 
 That's better. Turns out, that this same method is invoked when we use the built-in function `str()` or `format()`.
 
-```text
+```python
 >>> str(p1)
 '(2,3)'
 
@@ -109,7 +109,7 @@ Now let's go back to operator overloading.
 
 To overload the `+` operator, we will need to implement `__add__()` function in the class. With great power comes great responsibility. We can do whatever we like, inside this function. But it is more sensible to return a `Point` object of the coordinate sum.
 
-```text
+```python
 class Point:
     def __init__(self, x=0, y=0):
         self.x = x
@@ -126,7 +126,7 @@ class Point:
 
 Now let's try the addition operation again:
 
-```text
+```python
 class Point:
     def __init__(self, x=0, y=0):
         self.x = x
@@ -181,7 +181,7 @@ Suppose we wanted to implement the less than symbol `<` symbol in our `Point` cl
 
 Let us compare the magnitude of these points from the origin and return the result for this purpose. It can be implemented as follows.
 
-```text
+```python
 # overloading the less than operator
 class Point:
     def __init__(self, x=0, y=0):

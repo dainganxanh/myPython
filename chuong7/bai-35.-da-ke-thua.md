@@ -4,7 +4,8 @@ description: Python Multiple Inheritance
 
 # Bài 35. Đa kế thừa
 
-**In this tutorial, you'll learn about multiple inheritance in Python and how to use it in your program. You'll also learn about multi-level inheritance and the method resolution order.**
+* Ông cho cha kế thừa, cha cho con kế thừa thì con được kế thừa từ cả cha và ông.
+* Một "người" có thể được kế thừa trực tiếp từ nhiều người.
 
 ### Python Multiple Inheritance <a id="inheritance"></a>
 
@@ -14,7 +15,7 @@ In multiple inheritance, the features of all the base classes are inherited into
 
 #### Example
 
-```text
+```python
 class Base1:
     pass
 
@@ -37,7 +38,7 @@ In multilevel inheritance, features of the base class and the derived class are 
 
 An example with corresponding visualization is given below.
 
-```text
+```python
 class Base:
     pass
 
@@ -56,7 +57,7 @@ Every class in Python is derived from the `object` class. It is the most base ty
 
 So technically, all other classes, either built-in or user-defined, are derived classes and all objects are instances of the `object` class.
 
-```text
+```python
 # Output: True
 print(issubclass(list,object))
 
@@ -75,7 +76,7 @@ MRO must prevent local precedence ordering and also provide monotonicity. It ens
 
 MRO of a class can be viewed as the `__mro__` attribute or the `mro()` method. The former returns a tuple while the latter returns a list.
 
-```text
+```python
 >>> MultiDerived.__mro__
 (<class '__main__.MultiDerived'>,
  <class '__main__.Base1'>,
@@ -91,7 +92,7 @@ MRO of a class can be viewed as the `__mro__` attribute or the `mro()` method. T
 
 Here is a little more complex multiple inheritance example and its visualization along with the MRO.![Multiple Inheritance Visualization](https://cdn.programiz.com/sites/tutorial2program/files/MRO.jpg)Visualizing Multiple Inheritance in Python
 
-```text
+```python
 # Demonstration of MRO
 
 class X:
@@ -128,7 +129,7 @@ print(M.mro())
 
 **Output**
 
-```text
+```python
 [<class '__main__.M'>, <class '__main__.B'>, <class '__main__.A'>, <class '__main__.X'>, <class '__main__.Y'>, <class '__main__.Z'>, <class 'object'>]
 ```
 
