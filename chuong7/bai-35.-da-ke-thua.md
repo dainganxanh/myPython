@@ -9,11 +9,7 @@ description: Python Multiple Inheritance
 
 ### Đa kế thừa trong Python \(Multiple Inheritance\) <a id="inheritance"></a>
 
-A [class](https://www.programiz.com/python-programming/class) can be derived from more than one base class in Python, similar to C++. This is called multiple inheritance.
-
 Một lớp có thể được bắt nguồn từ nhiều hơn một lớp cơ sở \(lớp cha\) và như thế được gọi là đa kế thừa.
-
-In multiple inheritance, the features of all the base classes are inherited into the derived class. The syntax for multiple inheritance is similar to single [inheritance](https://www.programiz.com/python-programming/inheritance).
 
 Trong đa kế thừa, các tính năng của tất cả các lớp cơ sở \(lớp cha\) được kế thừa vào lớp dẫn xuất \(lướp con\). Cú pháp của đa kế thừa tương tự như kế thừa đơn.
 
@@ -30,9 +26,9 @@ class Lopcondakethua(Base1, Base2):
     pass
 ```
 
-Here, the MultiDerived class is derived from Base1 and Base2 classes.![Multiple Inheritance in Python](https://cdn.programiz.com/sites/tutorial2program/files/MultipleInheritance.jpg)Multiple Inheritance in Python
+Biểu đồ minh họa đa kế thừa từ 2 class.
 
-The MultiDerived class inherits from both Base1 and Base2 classes.
+![Multiple Inheritance in Python](https://cdn.programiz.com/sites/tutorial2program/files/MultipleInheritance.jpg)
 
 ### Python Multilevel Inheritance <a id="multilevel"></a>
 
