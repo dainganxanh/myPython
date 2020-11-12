@@ -83,11 +83,11 @@ Cách tốt hơn và thường được dùng hơn khi gọi kế thừa \_\_ini
 
 ### Kiểm tra quan hệ 2 lớp
 
-Hàm isinstance\(\) và issubclass\(\) được dùng để kiểm tra mối quan hệ của hai lớp và instance.
+Hàm `isinstance()` và `issubclass()` được dùng để kiểm tra mối quan hệ của hai lớp và instance.
 
-Hàm issubclass\(classA, classB\) trả về True nếu class A là lớp con của class B.
+Hàm `issubclass(A, B)` trả về `True` nếu class A là lớp con của class B.
 
-Hàm isinstance\(a,b\) trả về True nếu đối tượng a là một thực thể của class b hoặc một class con của lớp b.
+Hàm `isinstance(a,B)` trả về `True` nếu đối tượng a là một thể hiện \(instance\) của class B hoặc một class con của lớp B.
 
 Ví dụ
 
