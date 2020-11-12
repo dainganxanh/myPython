@@ -7,22 +7,26 @@ description: Python Multiple Inheritance
 * Ông cho cha kế thừa, cha cho con kế thừa thì con được kế thừa từ cả cha và ông.
 * Một "người" có thể được kế thừa trực tiếp từ nhiều "người".
 
-### Python Multiple Inheritance <a id="inheritance"></a>
+### Đa kế thừa trong Python \(Multiple Inheritance\) <a id="inheritance"></a>
 
 A [class](https://www.programiz.com/python-programming/class) can be derived from more than one base class in Python, similar to C++. This is called multiple inheritance.
 
+Một lớp có thể được bắt nguồn từ nhiều hơn một lớp cơ sở \(lớp cha\) và như thế được gọi là đa kế thừa.
+
 In multiple inheritance, the features of all the base classes are inherited into the derived class. The syntax for multiple inheritance is similar to single [inheritance](https://www.programiz.com/python-programming/inheritance).
 
-#### Example
+Trong đa kế thừa, các tính năng của tất cả các lớp cơ sở \(lớp cha\) được kế thừa vào lớp dẫn xuất \(lướp con\). Cú pháp của đa kế thừa tương tự như kế thừa đơn.
+
+#### Ví dụ
 
 ```python
-class Base1:
+class Lopcha1:
     pass
 
-class Base2:
+class Lopcha2:
     pass
 
-class MultiDerived(Base1, Base2):
+class Lopcondakethua(Base1, Base2):
     pass
 ```
 
