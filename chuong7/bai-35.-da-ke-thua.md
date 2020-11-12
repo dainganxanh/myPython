@@ -5,7 +5,7 @@ description: Python Multiple Inheritance
 # Bài 35. Đa kế thừa
 
 * Ông cho cha kế thừa, cha cho con kế thừa thì con được kế thừa từ cả cha và ông.
-* Một "người" có thể được kế thừa trực tiếp từ nhiều người.
+* Một "người" có thể được kế thừa trực tiếp từ nhiều "người".
 
 ### Python Multiple Inheritance <a id="inheritance"></a>
 
