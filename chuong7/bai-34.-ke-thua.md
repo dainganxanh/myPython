@@ -75,40 +75,30 @@ Ta xây dựng class Tamgiac thừa kế từ lớp Dagiac. Theo đó lớp Tamg
 
 ### Method Overriding in Python <a id="method"></a>
 
-In the above example, notice that `__init__()` method was defined in both classes, Triangle as well Polygon. When this happens, the method in the derived class overrides that in the base class. This is to say, `__init__()` in Triangle gets preference over the `__init__` in Polygon.
+Ở ví dụ trên ta thấy phương thức \_\_init\_\_\(\) được khai báo ở cả 2 class \(Dagiac và Tamgiac\). Trong trường hợp này phương thức \_\_init\_\_\(\) của lớp con sẽ ghi đề phương thức cùng tên của lớp cha. Nghĩa là phương thức instructor của Tamgiac ghi đè lên instructor của Dagiac.
 
-Generally when overriding a base method, we tend to extend the definition rather than simply replace it. The same is being done by calling the method in base class from the one in derived class \(calling `Polygon.__init__()` from `__init__()` in `Triangle`\).
+Thông thường, việc ghi đè chỉ được dùng khi ta cần định nghĩa lại hoặc khai báo mới trong con so với lớp cha. Trường hợp không có gì khác thì gọi phương thức từ lớp cha để kế thừa \(dùng lệnh gọi `Dagiac.__init__()` trong `__init__()` của `Tamgiac`\).
 
-A better option would be to use the built-in function `super()`. So, `super().__init__(3)` is equivalent to `Polygon.__init__(self,3)` and is preferred. To learn more about the `super()` function in Python, visit [Python super\(\) function](http://rhettinger.wordpress.com/2011/05/26/super-considered-super/).
+Cách tốt hơn và thường được dùng hơn khi gọi kế thừa \_\_init\_\_ từ lớp cha người ta dùng hàm có sẵn super\(\). Thay vì gọi  `Dagiac.__init__(self, 3)` thì ta có thể gọi`super().__init__(3)` .
 
-Two built-in functions `isinstance()` and `issubclass()` are used to check inheritances.
+### Kiểm tra quan hệ 2 lớp
 
-The function `isinstance()` returns `True` if the object is an instance of the class or other classes derived from it. Each and every class in Python inherits from the base class `object`.
+Hàm isinstance\(\) và issubclass\(\) được dùng để kiểm tra mối quan hệ của hai lớp và instance.
 
-```text
->>> isinstance(t,Triangle)
-True
+Hàm issubclass\(classA, classB\) trả về True nếu class A là lớp con của class B.
 
->>> isinstance(t,Polygon)
-True
+Hàm isinstance\(a,b\) trả về True nếu đối tượng a là một thực thể của class b hoặc một class con của lớp b.
 
->>> isinstance(t,int)
-False
+Ví dụ
 
->>> isinstance(t,object)
-True
-```
-
-Similarly, `issubclass()` is used to check for class inheritance.
-
-```text
->>> issubclass(Polygon,Triangle)
-False
-
->>> issubclass(Triangle,Polygon)
-True
-
->>> issubclass(bool,int)
-True
+```python
+# True
+print(isinstance(tg,Tamgiac))
+# True
+print(isinstance(tg,Dagiac))
+# True
+print(issubclass(Tamgiac,Dagiac))
+# False
+print(issubclass(Dagiac,Tamgiac))
 ```
 
