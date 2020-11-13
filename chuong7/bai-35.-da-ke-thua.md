@@ -30,13 +30,15 @@ Biểu đồ minh họa đa kế thừa từ 2 class.
 
 ![Multiple Inheritance in Python](https://cdn.programiz.com/sites/tutorial2program/files/MultipleInheritance.jpg)
 
-### Python Multilevel Inheritance <a id="multilevel"></a>
+### Kế thừa đa cấp trong Python \(Multilevel Inheritance\) <a id="multilevel"></a>
 
 We can also inherit from a derived class. This is called multilevel inheritance. It can be of any depth in Python.
 
-In multilevel inheritance, features of the base class and the derived class are inherited into the new derived class.
+Ta có thể kế thừa từ một lớp dẫn xuất \(lớp con\) và như vậy được gọi là kế thừa đa cấp. Kế thừa đa cấp không giới hạn bao nhiêu cấp.
 
-An example with corresponding visualization is given below.
+Trong kế thừa đa cấp, các tính năng của lớp cơ sở và lớp dẫn xuất được kế thừa vào lớp dẫn xuất mới.
+
+Ví dụ
 
 ```python
 class Base:
@@ -49,7 +51,9 @@ class Derived2(Derived1):
     pass
 ```
 
-Here, the Derived1 class is derived from the Base class, and the Derived2 class is derived from the Derived1 class.![Multilevel Inheritance in Python](https://cdn.programiz.com/sites/tutorial2program/files/MultilevelInheritance.jpg)Multilevel Inheritance in Python
+Ở ví dụ này, lớp Derived1 có nguồn gốc từ lớp Cơ sở và lớp Derived2 có nguồn gốc từ lớp Derived1.
+
+![Multilevel Inheritance in Python](https://cdn.programiz.com/sites/tutorial2program/files/MultilevelInheritance.jpg)
 
 ### Method Resolution Order in Python <a id="resolution"></a>
 

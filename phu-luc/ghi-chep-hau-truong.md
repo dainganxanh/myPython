@@ -26,6 +26,7 @@ print(y)
 ```
 
 ## Chèn ký tự vào xâu bằng rjust\(\), ljust\(\) và center\(\)
+
 Canh lề ký tự khi in
 
 ```python
@@ -133,6 +134,4 @@ Khác biệt giữa List, Dict, Tuple, Set trong Python
 ## Colab Notebook
 
 {% embed url="https://colab.research.google.com/drive/1ZvsCX1WmCbCAX2NreN0FY8Gc8g2tPyVr?usp=sharing" caption="" %}
-
-
 
