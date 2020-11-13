@@ -55,11 +55,13 @@ class Derived2(Derived1):
 
 ![Multilevel Inheritance in Python](https://cdn.programiz.com/sites/tutorial2program/files/MultilevelInheritance.jpg)
 
-### Method Resolution Order in Python <a id="resolution"></a>
+### Thứ tự truy xuất phương thức \(Method Resolution Order\)
 
 Every class in Python is derived from the `object` class. It is the most base type in Python.
 
 So technically, all other classes, either built-in or user-defined, are derived classes and all objects are instances of the `object` class.
+
+Class được bắt nguồn từ object. Trong kịch bản đa thừa kế, bất kỳ thuộc tính cần được truy xuất nào, đầu tiên sẽ được tìm kiếm trong lớp hiện tại. Nếu không tìm thấy, tìm kiếm tiếp tục vào lớp cha đầu tiên và từ trái qua phải.
 
 ```python
 # Output: True
@@ -73,6 +75,25 @@ print(isinstance("Hello",object))
 ```
 
 In the multiple inheritance scenario, any specified attribute is searched first in the current class. If not found, the search continues into parent classes in depth-first, left-right fashion without searching the same class twice.
+
+Vậy thứ tự truy xuất sẽ là \[LopCon, LopCha1, LopCha2, object\].
+
+
+
+Thứ tự này còn được gọi là tuyến tính hóa của LopCon và tập hợp các quy tắc được sử dụng để tìm thứ tự này được gọi là Thứ tự truy xuất phương thức \(MRO\).
+
+
+
+Nói một cách dễ hiểu, MRO dùng để hiển thị danh sách/tuple các class cha của một class nào đó.
+
+
+
+MRO được sử dụng theo hai cách:
+
+* \_\_mro\_\_: trả về một tuple
+* mro\(\): trả về một danh sách.
+
+
 
 So, in the above example of `MultiDerived` class the search order is \[`MultiDerived`, `Base1`, `Base2`, `object`\]. This order is also called linearization of `MultiDerived` class and the set of rules used to find this order is called **Method Resolution Order \(MRO\)**.
 
