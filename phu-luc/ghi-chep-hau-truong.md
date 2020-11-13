@@ -7,12 +7,21 @@ description: Ghi chép trong quá trình biên soạn tài liệu
 ## Tách dữ liệu từ một dòng nhập
 
 ```python
-a = input()
+# a = input()
 a = 'Hello! Nice to see you!'
 x, *y = a.split()
 # Hello!
 print(x)
 # ['Nice', 'to', 'see', 'you!'] 
+print(y)
+```
+
+```python
+a = 'Learn Python'
+x, y = a.split()
+# Learn
+print(x)
+# Python 
 print(y)
 ```
 
