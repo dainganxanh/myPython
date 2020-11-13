@@ -57,11 +57,9 @@ class Derived2(Derived1):
 
 ### Thứ tự truy xuất phương thức \(Method Resolution Order\)
 
-Every class in Python is derived from the `object` class. It is the most base type in Python.
+Mọi lớp trong Python đều có nguồn gốc từ lớp đối tượng. Nó là kiểu cơ sở nhất trong Python.
 
-So technically, all other classes, either built-in or user-defined, are derived classes and all objects are instances of the `object` class.
-
-Class được bắt nguồn từ object. Trong kịch bản đa thừa kế, bất kỳ thuộc tính cần được truy xuất nào, đầu tiên sẽ được tìm kiếm trong lớp hiện tại. Nếu không tìm thấy, tìm kiếm tiếp tục vào lớp cha đầu tiên và từ trái qua phải.
+Vì vậy, về mặt kỹ thuật, tất cả các lớp khác, được tạo sẵn hoặc do người dùng định nghĩa, đều là các lớp dẫn xuất và tất cả các đối tượng là các thể hiện của lớp đối tượng.
 
 ```python
 # Output: True
@@ -74,6 +72,8 @@ print(isinstance(5.5,object))
 print(isinstance("Hello",object))
 ```
 
+Class được bắt nguồn từ object. Trong kịch bản đa thừa kế, bất kỳ thuộc tính cần được truy xuất nào, đầu tiên sẽ được tìm kiếm trong lớp hiện tại. Nếu không tìm thấy, tìm kiếm tiếp tục vào lớp cha đầu tiên và từ trái qua phải.
+
 In the multiple inheritance scenario, any specified attribute is searched first in the current class. If not found, the search continues into parent classes in depth-first, left-right fashion without searching the same class twice.
 
 Vậy thứ tự truy xuất sẽ là \[LopCon, LopCha1, LopCha2, object\].
@@ -82,11 +82,7 @@ Vậy thứ tự truy xuất sẽ là \[LopCon, LopCha1, LopCha2, object\].
 
 Thứ tự này còn được gọi là tuyến tính hóa của LopCon và tập hợp các quy tắc được sử dụng để tìm thứ tự này được gọi là Thứ tự truy xuất phương thức \(MRO\).
 
-
-
 Nói một cách dễ hiểu, MRO dùng để hiển thị danh sách/tuple các class cha của một class nào đó.
-
-
 
 MRO được sử dụng theo hai cách:
 
@@ -115,7 +111,9 @@ MRO of a class can be viewed as the `__mro__` attribute or the `mro()` method. T
  <class 'object'>]
 ```
 
-Here is a little more complex multiple inheritance example and its visualization along with the MRO.![Multiple Inheritance Visualization](https://cdn.programiz.com/sites/tutorial2program/files/MRO.jpg)Visualizing Multiple Inheritance in Python
+Dưới đây là một ví dụ thừa kế phức tạp và hiển thị trực quan của nó cùng với MRO.
+
+![Multiple Inheritance Visualization](https://cdn.programiz.com/sites/tutorial2program/files/MRO.jpg)
 
 ```python
 # Demonstration of MRO
