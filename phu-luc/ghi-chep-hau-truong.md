@@ -16,17 +16,21 @@ print(x)
 print(y)
 ```
 
-## Chèn ký tự vào xâu bằng rjust\(\) và ljust\(\)
+## Chèn ký tự vào xâu bằng rjust\(\), ljust\(\) và center\(\)
+Canh lề ký tự khi in
 
 ```python
 # rjust() và ljust() chèn thêm vào xâu n-len(s) ký tự
 s = "banana"
 xr = s.rjust(20, "-")
 xl = s.ljust(20, '-')
+xc = s.center(20,'-')
 # Output: --------------banana
 print(xr)
 # Output: banana--------------
 print(xl)
+# Output: -------banana-------
+print(xc)
 ```
 
 ## Bung nén tham số tuple, dict
