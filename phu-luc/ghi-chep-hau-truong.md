@@ -20,7 +20,7 @@ print(y)
 Canh lề ký tự khi in
 
 ```python
-# rjust() và ljust() chèn thêm vào xâu n-len(s) ký tự
+# rjust(), ljust() và center() chèn thêm vào xâu n-len(s) ký tự
 s = "banana"
 xr = s.rjust(20, "-")
 xl = s.ljust(20, '-')
