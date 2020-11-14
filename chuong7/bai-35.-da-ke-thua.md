@@ -72,30 +72,16 @@ print(isinstance(5.5,object))
 print(isinstance("Hello",object))
 ```
 
-Class được bắt nguồn từ object. Trong kịch bản đa kế thừa, bất kỳ thuộc tính cần được truy xuất nào, đầu tiên sẽ được tìm kiếm trong lớp hiện tại. Nếu không tìm thấy, tìm kiếm tiếp tục vào lớp cha đầu tiên và từ trái qua phải.
+Trong kịch bản đa kế thừa, bất kỳ thuộc tính cần được truy xuất nào, đầu tiên sẽ được tìm kiếm trong lớp hiện tại. Nếu không tìm thấy, tìm kiếm tiếp tục vào lớp cha đầu tiên và từ trái qua phải.
 
-In the multiple inheritance scenario, any specified attribute is searched first in the current class. If not found, the search continues into parent classes in depth-first, left-right fashion without searching the same class twice.
+Ở ví dụ trên, lớp `MultiDerived` có thứ tự ưu tiên truy xuất như sau: \[`MultiDerived`, `Base1`, `Base2`, `object`\]. 
 
-Vậy thứ tự truy xuất sẽ là \[LopCon, LopCha1, LopCha2, object\].
-
-
-
-Thứ tự này còn được gọi là tuyến tính hóa của LopCon và tập hợp các quy tắc được sử dụng để tìm thứ tự này được gọi là Thứ tự truy xuất phương thức \(MRO\).
-
-Nói một cách dễ hiểu, MRO dùng để hiển thị danh sách/tuple các class cha của một class nào đó.
+Thứ tự này còn được gọi là tuyến tính hóa của LopCon và tập hợp các quy tắc được sử dụng để tìm thứ tự này được gọi là **Thứ tự truy xuất phương thức** \(**MRO**\).
 
 MRO được sử dụng theo hai cách:
 
 * \_\_mro\_\_: trả về một tuple
 * mro\(\): trả về một danh sách.
-
-
-
-So, in the above example of `MultiDerived` class the search order is \[`MultiDerived`, `Base1`, `Base2`, `object`\]. This order is also called linearization of `MultiDerived` class and the set of rules used to find this order is called **Method Resolution Order \(MRO\)**.
-
-MRO must prevent local precedence ordering and also provide monotonicity. It ensures that a class always appears before its parents. In case of multiple parents, the order is the same as tuples of base classes.
-
-MRO of a class can be viewed as the `__mro__` attribute or the `mro()` method. The former returns a tuple while the latter returns a list.
 
 ```python
 >>> MultiDerived.__mro__
