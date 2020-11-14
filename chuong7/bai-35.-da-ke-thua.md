@@ -77,14 +77,7 @@ Trong kịch bản đa kế thừa, bất kỳ thuộc tính cần được truy
 Ở ví dụ đầu bài, lớp `Lopcondakethua` có thứ tự ưu tiên truy xuất như sau:   
 \[`Lopcondakethua`, `Lopcha1`, `Lopcha2`, `object`\]. 
 
-Thứ tự này còn được gọi là tuyến tính hóa của LopCon và tập hợp các quy tắc được sử dụng để tìm thứ tự này được gọi là **Thứ tự truy xuất phương thức** \(**MRO**\).
-
-Nói cách khác, MRO chính là list các lớp mà lớp hiện tại được kế thừa và đối tượng thể hiện của nó.
-
-MRO được sử dụng theo hai cách:
-
-* \_\_mro\_\_: trả về một tuple
-* mro\(\): trả về một danh sách.
+Để biết thứ tự truy xuất ta có thể dùng phương thức `__mro__` hoặc `mro()`. `__mro__` trả về một tuple còn `mro()` trả về một list
 
 ```python
 class Lopcha1:
@@ -124,31 +117,20 @@ Dưới đây là một ví dụ thừa kế phức tạp và hiển thị trự
 class X:
     pass
 
-
 class Y:
     pass
-
 
 class Z:
     pass
 
-
 class A(X, Y):
     pass
-
 
 class B(Y, Z):
     pass
 
-
 class M(B, A, Z):
     pass
-
-# Output:
-# [<class '__main__.M'>, <class '__main__.B'>,
-#  <class '__main__.A'>, <class '__main__.X'>,
-#  <class '__main__.Y'>, <class '__main__.Z'>,
-#  <class 'object'>]
 
 print(M.mro())
 ```
@@ -156,8 +138,12 @@ print(M.mro())
 **Output**
 
 ```python
-[<class '__main__.M'>, <class '__main__.B'>, <class '__main__.A'>, <class '__main__.X'>, <class '__main__.Y'>, <class '__main__.Z'>, <class 'object'>]
+[<class '__main__.M'>,
+ <class '__main__.B'>,
+ <class '__main__.A'>,
+ <class '__main__.X'>,
+ <class '__main__.Y'>,
+ <class '__main__.Z'>,
+ <class 'object'>]
 ```
-
-To know the actual algorithm on how MRO is calculated, visit [Discussion on MRO](http://www.python.org/download/releases/2.3/mro/).
 
