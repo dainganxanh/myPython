@@ -22,7 +22,7 @@ class Lopcha1:
 class Lopcha2:
     pass
 
-class Lopcondakethua(Base1, Base2):
+class Lopcondakethua(Lopcha1, Lopcha2):
     pass
 ```
 
@@ -74,9 +74,12 @@ print(isinstance("Hello",object))
 
 Trong kịch bản đa kế thừa, bất kỳ thuộc tính cần được truy xuất nào, đầu tiên sẽ được tìm kiếm trong lớp hiện tại. Nếu không tìm thấy, tìm kiếm tiếp tục vào lớp cha đầu tiên và từ trái qua phải.
 
-Ở ví dụ trên, lớp `MultiDerived` có thứ tự ưu tiên truy xuất như sau: \[`MultiDerived`, `Base1`, `Base2`, `object`\]. 
+Ở ví dụ đầu bài, lớp `Lopcondakethua` có thứ tự ưu tiên truy xuất như sau:   
+\[`Lopcondakethua`, `Lopcha1`, `Lopcha2`, `object`\]. 
 
 Thứ tự này còn được gọi là tuyến tính hóa của LopCon và tập hợp các quy tắc được sử dụng để tìm thứ tự này được gọi là **Thứ tự truy xuất phương thức** \(**MRO**\).
+
+Nói cách khác, MRO chính là list các lớp mà lớp hiện tại được kế thừa và đối tượng thể hiện của nó.
 
 MRO được sử dụng theo hai cách:
 
@@ -84,17 +87,31 @@ MRO được sử dụng theo hai cách:
 * mro\(\): trả về một danh sách.
 
 ```python
->>> MultiDerived.__mro__
-(<class '__main__.MultiDerived'>,
- <class '__main__.Base1'>,
- <class '__main__.Base2'>,
- <class 'object'>)
+class Lopcha1:
+    pass
 
->>> MultiDerived.mro()
-[<class '__main__.MultiDerived'>,
- <class '__main__.Base1'>,
- <class '__main__.Base2'>,
- <class 'object'>]
+class Lopcha2:
+    pass
+
+class Lopcondakethua(Lopcha1, Lopcha2):
+    pass
+
+print(Lopcondakethua.__mro__)    
+print(Lopcondakethua.mro())
+```
+
+Output:
+
+```python
+(<class '__main__.Lopcondakethua'>, 
+<class '__main__.Lopcha1'>, 
+<class '__main__.Lopcha2'>, 
+<class 'object'>)
+
+[<class '__main__.Lopcondakethua'>, 
+<class '__main__.Lopcha1'>, 
+<class '__main__.Lopcha2'>, 
+<class 'object'>]
 ```
 
 Dưới đây là một ví dụ thừa kế phức tạp và hiển thị trực quan của nó cùng với MRO.
