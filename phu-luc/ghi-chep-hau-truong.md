@@ -4,6 +4,25 @@ description: Ghi chép trong quá trình biên soạn tài liệu
 
 # Ghi chép - ghi chú
 
+## Chuyển đổi và in hệ cơ số decimal, binary, oct, hex
+
+```
+n  = 1986
+print (f"decimal: {n:d}")
+print(f"oct:\t {n:o}")
+print(f"hex:\t {n:x}")
+print(f"binary:\t {n:b}")
+```
+
+Output:
+
+```
+decimal: 1986
+oct:	 3702
+hex:	 7c2
+binary:	 11111000010
+```
+
 ## Tách dữ liệu từ một dòng nhập
 
 ```python
