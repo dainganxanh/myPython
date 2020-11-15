@@ -6,7 +6,7 @@ description: Ghi chép trong quá trình biên soạn tài liệu
 
 ## Chuyển đổi và in hệ cơ số decimal, binary, oct, hex
 
-```
+```python
 n  = 1986
 print (f"decimal: {n:d}")
 print(f"oct:\t {n:o}")
@@ -16,11 +16,11 @@ print(f"binary:\t {n:b}")
 
 Output:
 
-```
+```text
 decimal: 1986
-oct:	 3702
-hex:	 7c2
-binary:	 11111000010
+oct:     3702
+hex:     7c2
+binary:  11111000010
 ```
 
 ## Tách dữ liệu từ một dòng nhập
