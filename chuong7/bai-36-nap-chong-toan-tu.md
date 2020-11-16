@@ -8,15 +8,21 @@ description: Python Operator Overloading
 
 **You can change the meaning of an operator in Python depending upon the operands used. In this tutorial, you will learn how to use operator overloading in Python Object Oriented Programming.**
 
-**Bạn có thể thay đổi ý nghĩa của một toán tử trong Python tùy thuộc vào các toán hạng được sử dụng. Trong hướng dẫn này, bạn sẽ học cách sử dụng nạp chồng toán tử trong Lập trình hướng đối tượng Python.**
+**Ta có thể thay đổi ý nghĩa của một toán tử trong Python tùy thuộc vào các toán hạng được sử dụng. Trong bài này ta sẽ học cách sử dụng nạp chồng toán tử trong Lập trình hướng đối tượng Python.**
 
 ### Nạp chồng toán tử **trong** Python
 
 [Python operators](https://www.programiz.com/python-programming/operators) work for built-in classes. But the same operator behaves differently with different types. For example, the `+` operator will perform arithmetic addition on two numbers, merge two lists, or concatenate two strings.
 
+Các toán tử Python hoạt động đối với các lớp dựng sẵn. Nhưng cùng một toán tử hoạt động khác nhau với các kiểu khác nhau. Ví dụ: toán tử + sẽ thực hiện phép cộng số học trên hai số, hợp nhất hai danh sách hoặc nối hai chuỗi.
+
 This feature in Python that allows the same operator to have different meaning according to the context is called operator overloading.
 
+Tính năng này trong Python cho phép cùng một toán tử có nghĩa khác nhau tùy theo ngữ cảnh được gọi là nạp chồng toán tử
+
 So what happens when we use them with objects of a user-defined class? Let us consider the following class, which tries to simulate a point in 2-D coordinate system.
+
+Vậy điều gì sẽ xảy ra khi chúng ta sử dụng chúng với các đối tượng của một lớp do người dùng định nghĩa? Chúng ta hãy xem xét lớp sau, lớp này mô phỏng một điểm trong hệ tọa độ 2-D.
 
 ```python
 class Point:
