@@ -8,7 +8,9 @@ description: Python Operator Overloading
 
 **You can change the meaning of an operator in Python depending upon the operands used. In this tutorial, you will learn how to use operator overloading in Python Object Oriented Programming.**
 
-### Python Operator Overloading <a id="what"></a>
+**Bạn có thể thay đổi ý nghĩa của một toán tử trong Python tùy thuộc vào các toán hạng được sử dụng. Trong hướng dẫn này, bạn sẽ học cách sử dụng nạp chồng toán tử trong Lập trình hướng đối tượng Python.**
+
+### Nạp chồng toán tử **trong** Python
 
 [Python operators](https://www.programiz.com/python-programming/operators) work for built-in classes. But the same operator behaves differently with different types. For example, the `+` operator will perform arithmetic addition on two numbers, merge two lists, or concatenate two strings.
 
