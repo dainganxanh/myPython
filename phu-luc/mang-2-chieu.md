@@ -60,12 +60,16 @@ Trong bài này ta chuyển dữ liệu string sang int bằng hàm map(). `m,n 
 
 ```Python
 s = '1 2 3'
+
 # Tách xâu s thành list a
 ma = s.split() 
+
 # in mảng a ta có: ['1', '2', '3']. (lúc này các phần tử là string)
 print(ma)
+
 # Chuyển các phần tử của mảng a thành kiểu int
 ma = list(map(int,ma))
+
 # in mảng a ta có: [1, 2, 3]
 print(ma)
 ``` 
