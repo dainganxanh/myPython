@@ -56,7 +56,7 @@ Nếu ta dùng `m,n = fi.readline().split()` thì m được gán bằng '4' và
 
 Để chuyển dữ liệu từ string sang int ta có thể ép kiểu cho từng biến. Tuy nhiên như thế sẽ làm cho code dài và khó đọc. Trong bài này ta chuyển dữ liệu string sang int bằng hàm map\(\). `m,n = list(map(int,fi.readline().split()))`
 
-Để dễ hiểu hơn về hàm map\(\). Xét ví dụ sau:
+**Để dễ hiểu hơn ta xét ví dụ sau:**
 
 ```python
 s = '1 2 3'
