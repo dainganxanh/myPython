@@ -4,8 +4,6 @@ description: Một ví dụ về đọc dữ liệu từ file và xử lý mản
 
 # Mảng 2 chiều
 
-## Đề bài
-
 Cho file mang2.in như sau:
 
 ```text
