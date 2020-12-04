@@ -1,3 +1,7 @@
+---
+description: Một ví dụ về đọc dữ liệu từ file và xử lý mảng 2 chiều
+---
+
 # Mảng 2 chiều
 
 ## Đề bài
@@ -64,7 +68,8 @@ s = '1 2 3'
 # Tách xâu s thành list a
 ma = s.split() 
 
-# in mảng a ta có: ['1', '2', '3']. (lúc này các phần tử là string)
+# in mảng a ta có: ['1', '2', '3']. 
+#(lúc này các phần tử là string)
 print(ma)
 
 # Chuyển các phần tử của mảng a thành kiểu int
