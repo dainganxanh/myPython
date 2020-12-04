@@ -63,7 +63,7 @@
   * [Python @property decorator](chuong9/python-property-decorator.md)
   * [Python RegEx](chuong9/python-regex.md)
   * [Python Examples](chuong9/python-examples.md)
-* [Phụ lục](phu-luc/README.md)
+* [PHỤ LỤC - GHI CHÉP](phu-luc/README.md)
   * [Hàm map\(\)](phu-luc/ham-map.md)
   * [Cài Sublime Text để code Python](phu-luc/untitled.md)
   * [Ghi chép - ghi chú](phu-luc/ghi-chep-hau-truong.md)
