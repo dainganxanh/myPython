@@ -80,3 +80,5 @@ print(ma)
 * [Đọc thêm về hàm map\(\) tại đây](https://python.dainganxanh.com/phu-luc/ham-map)
 * [Xem thêm ví dụ ép kiểu bằng map\(\) tại đây](https://python.dainganxanh.com/phu-luc/ghi-chep-hau-truong#ep-kieu-phan-tu-list)
 
+Còn tiếp...
+
