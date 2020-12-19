@@ -71,5 +71,5 @@
 * [Tài liệu tham khảo](tai-lieu-tham-khao.md)
 * [www.dainganxanh.com](http://www.dainganxanh.com/)
 * [Các khóa học Python](https://python.neolms.com/)
-* [Hỏi đáp, chia sẻ](https://www.facebook.com/groups/tinhocnhatruong)
+* [Hỏi đáp, chia sẻ \(FG\)](https://www.facebook.com/groups/tinhocnhatruong)
 
