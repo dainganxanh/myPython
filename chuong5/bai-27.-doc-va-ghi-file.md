@@ -183,6 +183,10 @@ with open("ra.txt",'w') as f:
     f.write(str(b))
 ```
 
-[  
-](https://python.dainganxanh.com/chuong1/bai-7.-kieu-du-lieu-trong-python)
+## Đọc - Ghi file text unicode
+
+```python
+with open('tên file', 'mode', encoding = 'utf-8') as f:
+    <lệnh đọc ghi>
+```
 
