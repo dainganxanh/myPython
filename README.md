@@ -11,5 +11,11 @@ Giáo trình này là nội dung lược dịch từ khóa học Learn Python Pr
 _@Dosing Project  
 Contact: dainganxanh@msn.com_ 
 
-![](.gitbook/assets/cover-artwork.png)
+## SÁCH THAM KHẢO
+
+![https://dainganxanh.com/sgk\_python/](.gitbook/assets/python11.jpg)
+
+![https://dainganxanh.com/sgk\_python/](.gitbook/assets/python8.jpg)
+
+Thông tin chi tiến về 2 cuốn sách trên có tại: [https://dainganxanh.com/sgk\_python/](https://dainganxanh.com/sgk_python/)
 
