@@ -39,6 +39,10 @@ Số thực khác số nguyên bởi phần thập phân. Số chữ thập phâ
 
 Số phức được biểu diễn dạng x + yj. Trong đó x là phần thực, y là phần ảo.
 
+### -         **Phân số \(fraction\)**
+
+Phân số thuộc thư viện faction có dạng: Fraction\(&lt;Tử\_số&gt;, &lt;Mẫu\_số&gt;\). Trước khi sử dụng cần import thư viện fraction.
+
 Ví dụ:
 
 ```python
