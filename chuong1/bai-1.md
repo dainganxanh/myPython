@@ -71,3 +71,9 @@ Lưu với tên: Hello.py
 
 Double click để chạy file Hello.py sẽ cho kết quả “`Hello world !`”
 
+## Video lớp tập huấn 2021
+
+{% embed url="https://www.youtube.com/watch?v=C0bXLzXwTHc" %}
+
+
+
