@@ -11,11 +11,21 @@ Giáo trình này là nội dung lược dịch từ khóa học Learn Python Pr
 _@Dosing Project  
 Contact: dainganxanh@msn.com_ 
 
+## KHÓA HỌC KHUYẾN NGHỊ
+
+### Python phổ thô \(Dành cho thầy cô giáo dạy THCS, THPT\)
+
+Khóa học tập trung lập trình giải các bài toán tin học theo định hướng CS trong chương trình Tin học phổ thông. Chi tiết xem tại đây
+
+### Python Thực chiến \(dành cho mọi đối tượng\)
+
+Khóa học tập trung cho việc viết các ứng dụng xử lý những công việc thực tiễn. Chi tiết xem tại đây: [https://dainganxanh.com/khoa-hoc-python-thuc-chien/](https://dainganxanh.com/khoa-hoc-python-thuc-chien/)
+
+![](.gitbook/assets/image%20%282%29.png)
+
 ## SÁCH THAM KHẢO
 
-![https://dainganxanh.com/sgk\_python/](.gitbook/assets/python11.jpg)
-
-![https://dainganxanh.com/sgk\_python/](.gitbook/assets/python8.jpg)
-
 Thông tin chi tiến về 2 cuốn sách trên có tại: [https://dainganxanh.com/sgk\_python/](https://dainganxanh.com/sgk_python/)
+
+![](.gitbook/assets/image%20%283%29.png)
 
