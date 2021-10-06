@@ -13,9 +13,15 @@ Contact: dainganxanh@msn.com_
 
 ## KHÓA HỌC KHUYẾN NGHỊ
 
-### Python phổ thô \(Dành cho thầy cô giáo dạy THCS, THPT\)
+### Khóa học 1: Python phổ thông 
 
+Dành cho thầy cô giáo dạy THCS, THPT   
 Khóa học tập trung lập trình giải các bài toán tin học theo định hướng CS trong chương trình Tin học phổ thông. Chi tiết xem tại đây
+
+### 81 dự án Python cho học sinh phổ thông
+
+Dành cho thầy cô giáo dạy THCS, THPT  
+Khóa học tập trung hướng dẫn lập trình các dự án phù hợp với học sinh phổ thông
 
 ### Python Thực chiến \(dành cho mọi đối tượng\)
 
