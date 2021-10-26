@@ -55,11 +55,11 @@ print(my_list[5:])     # ['y', 't', 'h', 'o', 'n']
 print(my_list[:])     # ['H', 'ọ', 'c', ' ', 'P', 'y', 't', 'h', 'o', 'n']
 ```
 
-Lưu ý: tham số cắt đoạn \[a:b\] được lấy từ phần tử có chỉ số a đến phần tử trước chỉ số b. 
+Lưu ý: tham số cắt đoạn \[a:b] được lấy từ phần tử có chỉ số a đến phần tử trước chỉ số b.&#x20;
 
 ## Thêm, sửa phần tử list
 
-### Thay đổi giá trị phần tử 
+### Thay đổi giá trị phần tử&#x20;
 
 ```python
 a = [2, 4, 6, 8]
@@ -75,7 +75,7 @@ print(a)         # [1, 3, 5, 7]
 
 ### Thêm phần tử vào list
 
-Dùng append\(\) và extend\(\)
+Dùng append() và extend()
 
 ```python
 ma = [0, 9, 1, 8, 9, 1, 8]
@@ -99,7 +99,7 @@ mb = 'Happy! '
 print(mb * 5)     # Happy! Happy! Happy! Happy! Happy!
 ```
 
-Dùng phương thức insert\(\)
+Dùng phương thức insert()
 
 ```python
 ma = [1, 9]
@@ -126,7 +126,7 @@ del ma        # delete entire list
 # Nếu print(ma) sẽ cho lỗi: List not defined
 ```
 
-Ta có thể sử dụng các phương thức remove\(\), pop\(\), clear\(\) để xóa phần tử list. 
+Ta có thể sử dụng các phương thức remove(), pop(), clear() để xóa phần tử list.&#x20;
 
 ```python
 ma = ['P', 'y', 't', 'h', 'o', 'n', '3']
@@ -142,7 +142,7 @@ ma.clear()
 print(ma)            # Output: []
 ```
 
-Hoặc ta có thể xóa phần tử list bằng cách gán list rỗng cho phần tử muốn xóa 
+Hoặc ta có thể xóa phần tử list bằng cách gán list rỗng cho phần tử muốn xóa&#x20;
 
 ```python
 ma = ['P', 'y', 't', 'h', 'o', 'n', '3']
@@ -151,21 +151,21 @@ ma[2:4] = []
 print(ma)     # ['P', 'y', 'o', 'n', '3']
 ```
 
-## Phương thức \(list method\)
+## Phương thức (list method)
 
-Phương thức trong Python được gọi bởi dấu chấm và tên phương thức sau tên biến. Có dạng list.method\(\). Các phương thức xử lý list gồm:
+Phương thức trong Python được gọi bởi dấu chấm và tên phương thức sau tên biến. Có dạng list.method(). Các phương thức xử lý list gồm:
 
-`append() - thêm phần tử  
-extend() - nối list  
-insert() - chèn phần tử theo chỉ số   
-remove() - xóa một phần tử list  
-pop() - Xóa và trả về chỉ số phần tử vừa xóa  
-clear() - Xóa hết các phần tử của list -> trả về list rỗng  
-index() - Trả về chỉ số của phần tử đầu tiên có giá trị như tham số  
-count() - Đếm số phần tử có giá trị như tham số  
-sort() - Sắp xếp thành list tăng dần  
-reverse() - Đảo chiều phần tử list  
-copy() - Sao chép list`
+`append() - thêm phần tử`\
+`extend() - nối list`\
+`insert() - chèn phần tử theo chỉ số `\
+`remove() - xóa một phần tử list`\
+`pop() - Xóa và trả về chỉ số phần tử vừa xóa`\
+`clear() - Xóa hết các phần tử của list -> trả về list rỗng`\
+`index() - Trả về chỉ số của phần tử đầu tiên có giá trị như tham số`\
+`count() - Đếm số phần tử có giá trị như tham số`\
+`sort() - Sắp xếp thành list tăng dần`\
+`reverse() - Đảo chiều phần tử list`\
+`copy() - Sao chép list`
 
 Ví dụ:
 
@@ -226,10 +226,32 @@ for i in mau:
     print('Tôi thích màu', i)
 ```
 
-Output: `I like apple  
-I like banana  
-I like mango  
-Tôi thích màu xanh  
-Tôi thích màu đỏ  
-Tôi thích màu vàng`
+Output: `I like apple`\
+`I like banana`\
+`I like mango`\
+`Tôi thích màu xanh`\
+`Tôi thích màu đỏ`\
+`Tôi thích màu vàng`
+
+## Thao tác tạo list bổ sung
+
+Tạo list đơn có n phần tử
+
+```python
+n = 5
+ma = [None]*n
+print(ma)
+```
+
+Output: \[None, None, None, None, None]
+
+Tạo nested list dạng mảng 2 chiều có c cột và d dòng
+
+```python
+c = 5
+d = 3
+ma = [[None for x in range(c)] for x in range(d)]
+```
+
+Output: \[\[None, None, None, None, None], \[None, None, None, None, None], \[None, None, None, None, None]]
 
