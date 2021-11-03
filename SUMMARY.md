@@ -70,6 +70,6 @@
   * [Mảng 2 chiều](phu-luc/mang-2-chieu.md)
 * [Tài liệu tham khảo](tai-lieu-tham-khao.md)
 * [www.dainganxanh.com](http://www.dainganxanh.com)
-* [Khóa học Python](https://lms.dainganxanh.com)
+* [🐍 Khóa học Python](https://lms.dainganxanh.com)
 * [Hỏi đáp, chia sẻ (FG)](https://www.facebook.com/groups/tinhocnhatruong)
 * [Sinh Test chấm Themis](https://dainganxanh.com/phan-mem-sinh-test-cham-themis-bang-python/)
